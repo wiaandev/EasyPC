@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD0C145228F35206002A5A55 /* buildTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145128F35206002A5A55 /* buildTypes.swift */; };
+		BDB177C428F34C0E00EB33DD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB177C328F34C0D00EB33DD /* SettingsView.swift */; };
 		BDFE490E28F303D2008F00A4 /* EasyPCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE490D28F303D2008F00A4 /* EasyPCApp.swift */; };
 		BDFE491028F303D2008F00A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE490F28F303D2008F00A4 /* ContentView.swift */; };
 		BDFE491228F303D3008F00A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFE491128F303D3008F00A4 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD0C145128F35206002A5A55 /* buildTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildTypes.swift; sourceTree = "<group>"; };
+		BDB177C328F34C0D00EB33DD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BDFE490A28F303D2008F00A4 /* EasyPC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyPC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFE490D28F303D2008F00A4 /* EasyPCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPCApp.swift; sourceTree = "<group>"; };
 		BDFE490F28F303D2008F00A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +37,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BDB177C128F34AF700EB33DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD0C145128F35206002A5A55 /* buildTypes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BDB177C228F34B0700EB33DD /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BDFE490F28F303D2008F00A4 /* ContentView.swift */,
+				BDB177C328F34C0D00EB33DD /* SettingsView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		BDFE490128F303D2008F00A4 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +73,9 @@
 		BDFE490C28F303D2008F00A4 /* EasyPC */ = {
 			isa = PBXGroup;
 			children = (
+				BDB177C228F34B0700EB33DD /* Screens */,
+				BDB177C128F34AF700EB33DD /* Models */,
 				BDFE490D28F303D2008F00A4 /* EasyPCApp.swift */,
-				BDFE490F28F303D2008F00A4 /* ContentView.swift */,
 				BDFE491128F303D3008F00A4 /* Assets.xcassets */,
 				BDFE491328F303D3008F00A4 /* EasyPC.entitlements */,
 				BDFE491428F303D3008F00A4 /* Preview Content */,
@@ -139,6 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0C145228F35206002A5A55 /* buildTypes.swift in Sources */,
+				BDB177C428F34C0E00EB33DD /* SettingsView.swift in Sources */,
 				BDFE491028F303D2008F00A4 /* ContentView.swift in Sources */,
 				BDFE490E28F303D2008F00A4 /* EasyPCApp.swift in Sources */,
 			);
