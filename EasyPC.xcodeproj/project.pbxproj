@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		BD0C145228F35206002A5A55 /* buildTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145128F35206002A5A55 /* buildTypes.swift */; };
+		BD0C145428F37139002A5A55 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145328F37139002A5A55 /* SplashScreenView.swift */; };
+		BD0C145A28F37C2C002A5A55 /* SelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145928F37C2C002A5A55 /* SelectedView.swift */; };
+		BD0C145C28F37C4F002A5A55 /* BuildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145B28F37C4F002A5A55 /* BuildView.swift */; };
+		BD0C145E28F37C6A002A5A55 /* BuildStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145D28F37C6A002A5A55 /* BuildStartView.swift */; };
 		BDB177C428F34C0E00EB33DD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB177C328F34C0D00EB33DD /* SettingsView.swift */; };
 		BDFE490E28F303D2008F00A4 /* EasyPCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE490D28F303D2008F00A4 /* EasyPCApp.swift */; };
 		BDFE491028F303D2008F00A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE490F28F303D2008F00A4 /* ContentView.swift */; };
@@ -17,6 +21,11 @@
 
 /* Begin PBXFileReference section */
 		BD0C145128F35206002A5A55 /* buildTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildTypes.swift; sourceTree = "<group>"; };
+		BD0C145328F37139002A5A55 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		BD0C145828F37517002A5A55 /* Outfit-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Outfit-Bold.ttf"; path = "../../../../../../../Downloads/Outfit/static/Outfit-Bold.ttf"; sourceTree = "<group>"; };
+		BD0C145928F37C2C002A5A55 /* SelectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedView.swift; sourceTree = "<group>"; };
+		BD0C145B28F37C4F002A5A55 /* BuildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildView.swift; sourceTree = "<group>"; };
+		BD0C145D28F37C6A002A5A55 /* BuildStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildStartView.swift; sourceTree = "<group>"; };
 		BDB177C328F34C0D00EB33DD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BDFE490A28F303D2008F00A4 /* EasyPC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyPC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFE490D28F303D2008F00A4 /* EasyPCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPCApp.swift; sourceTree = "<group>"; };
@@ -37,6 +46,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD0C145528F374C6002A5A55 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BD0C145628F374DA002A5A55 /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		BD0C145628F374DA002A5A55 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BD0C145828F37517002A5A55 /* Outfit-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		BDB177C128F34AF700EB33DD /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -50,6 +75,10 @@
 			children = (
 				BDFE490F28F303D2008F00A4 /* ContentView.swift */,
 				BDB177C328F34C0D00EB33DD /* SettingsView.swift */,
+				BD0C145328F37139002A5A55 /* SplashScreenView.swift */,
+				BD0C145928F37C2C002A5A55 /* SelectedView.swift */,
+				BD0C145B28F37C4F002A5A55 /* BuildView.swift */,
+				BD0C145D28F37C6A002A5A55 /* BuildStartView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -73,6 +102,7 @@
 		BDFE490C28F303D2008F00A4 /* EasyPC */ = {
 			isa = PBXGroup;
 			children = (
+				BD0C145528F374C6002A5A55 /* Assets */,
 				BDB177C228F34B0700EB33DD /* Screens */,
 				BDB177C128F34AF700EB33DD /* Models */,
 				BDFE490D28F303D2008F00A4 /* EasyPCApp.swift */,
@@ -161,10 +191,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0C145E28F37C6A002A5A55 /* BuildStartView.swift in Sources */,
 				BD0C145228F35206002A5A55 /* buildTypes.swift in Sources */,
 				BDB177C428F34C0E00EB33DD /* SettingsView.swift in Sources */,
+				BD0C145428F37139002A5A55 /* SplashScreenView.swift in Sources */,
 				BDFE491028F303D2008F00A4 /* ContentView.swift in Sources */,
 				BDFE490E28F303D2008F00A4 /* EasyPCApp.swift in Sources */,
+				BD0C145A28F37C2C002A5A55 /* SelectedView.swift in Sources */,
+				BD0C145C28F37C4F002A5A55 /* BuildView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

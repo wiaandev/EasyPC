@@ -24,7 +24,7 @@ struct ContentView: View {
                         .frame(width: 25, height: 25, alignment: .center)
                         .padding()
                         .foregroundColor(.white)
-                        .background(.purple)
+                        .background(Color("Purple"))
                         .clipShape(Rectangle())
                         .cornerRadius(10)
                         .padding(.horizontal)
@@ -33,13 +33,13 @@ struct ContentView: View {
                 HStack{
                     TextField("Search builds here", text: $searchText)
                         .padding(35)
-                        .overlay(RoundedRectangle(cornerRadius:     15).stroke(.purple)
+                        .overlay(RoundedRectangle(cornerRadius:     15).stroke(Color("Purple"))
                             .padding()
-                    )
+                        )
                 }
                 HStack{
                     Text("Quick Filter")
-                        .foregroundColor(.purple)
+                        .foregroundColor(Color("Purple"))
                         .padding(.horizontal)
                     Spacer()
                 }
@@ -50,60 +50,64 @@ struct ContentView: View {
                         })
                         .frame(width: 75, height: 25)
                         .padding()
-                        .foregroundColor(.purple)
+                        .foregroundColor(Color("Purple"))
                         .overlay(
-                            RoundedRectangle(cornerRadius: 10).stroke(Color(.purple), lineWidth: 1))
+                            RoundedRectangle(cornerRadius: 10).stroke(Color("Purple"), lineWidth: 1))
                         .padding(.horizontal)
                         Button("Gaming", action: {
                             print("Hello World")
                         })
                         .frame(width: 75, height: 25)
                         .padding()
-                        .foregroundColor(.purple)
+                        .foregroundColor(Color("Purple"))
                         .overlay(
-                            RoundedRectangle(cornerRadius: 10).stroke(Color(.purple), lineWidth: 1))
+                            RoundedRectangle(cornerRadius: 10).stroke(Color("Purple"), lineWidth: 1))
                         .padding(.horizontal)
                         Button("Gaming", action: {
                             print("Hello World")
                         })
                         .frame(width: 75, height: 25)
                         .padding()
-                        .foregroundColor(.purple)
+                        .foregroundColor(Color("Purple"))
                         .overlay(
-                            RoundedRectangle(cornerRadius: 10).stroke(Color(.purple), lineWidth: 1))
+                            RoundedRectangle(cornerRadius: 10).stroke(Color("Purple"), lineWidth: 1))
                         .padding(.horizontal)
                     }
-                    HStack{
-                        Text("Our Builds")
-                            .padding(.horizontal)
-                            .foregroundColor(.purple)
-                        Spacer()
-                    }
-                    HStack{
-                        Text("Choose a build type")
-                            .padding(.horizontal)
-                            .font(.system(size: 20))
-                        Spacer()
-                    }
-                    Divider()
-                        .padding(.horizontal)
-                    Rectangle()
-                        .padding(.horizontal)
-                        .frame(width: .infinity, height: 200, alignment: .center)
-                        .cornerRadius(25)
-                        .foregroundColor(.purple)
-                        .overlay(
-                            HStack{
-                                Button("Select Build", action: {
-                                    
-                                })
-                                .padding()
-                                .foregroundColor(.white)
-                                .background(.blue)
-                                .clipShape(Capsule())
-                            }
-                        )
+
                 }
+                
+                HStack{
+                    Text("Our Builds")
+                        .padding(.horizontal)
+                        .foregroundColor(Color("Purple"))
+                        .font(.system(size: 40))
+                    Spacer()
+                }
+                HStack{
+                    Text("Choose a build type")
+                        .padding(.horizontal)
+                        .font(.system(size: 20))
+                        .foregroundColor(Color("Purple"))
+                    Spacer()
+                }
+                Divider()
+                    .padding(.horizontal)
+                Rectangle()
+                    .padding(.horizontal)
+                    .frame(width: .infinity, height: 200, alignment: .center)
+                    .cornerRadius(35)
+                    .foregroundColor(Color("Purple"))
+                    .overlay(
+                        HStack{
+                            Button("Select Build", action: {
+                                
+                            })
+                            .padding()
+                            .foregroundColor(.white)
+                            .background(.blue)
+                            .clipShape(Capsule())
+                        }
+                    )
             }
         }
     }
