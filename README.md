@@ -1,10 +1,10 @@
 
 <br />
 
-![GitHub repo size](https://img.shields.io/github/repo-size/wiaandev/WorkWare?color=lightblue)
-![GitHub watchers](https://img.shields.io/github/watchers/wiaandev/WorkWare?color=lightblue)
-![GitHub language count](https://img.shields.io/github/languages/count/wiaandev/WorkWare?color=lightblue)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/wiaandev/WorkWare?color=lightblue)
+![GitHub repo size](https://img.shields.io/github/repo-size/wiaandev/EasyPC?color=purple)
+![GitHub watchers](https://img.shields.io/github/watchers/wiaandev/EasyPC?color=lightblue)
+![GitHub language count](https://img.shields.io/github/languages/count/wiaandev/EasyPC?color=purple)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/wiaandev/EasyPC?color=lightblue)
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![Instagram][instagram-shield]][instagram-url]
 
@@ -18,10 +18,10 @@
     <img src="client\src\Assets\logo-light.svg/" width="100px">
   </a>
 
-<h3 align="center">WorkWare</h3>
+<h3 align="center">EasyPC</h3>
 
   <p align="center">
-    A Guitar E-Commerce Website Build with the MERN Stack.<br>
+    A simple app that helps users build a computer<br>
 
    <br />
    <br />
