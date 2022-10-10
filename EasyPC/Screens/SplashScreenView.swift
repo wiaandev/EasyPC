@@ -17,12 +17,10 @@ struct SplashScreenView: View {
             ContentView()
         } else {
             VStack {
-                VStack{
-                    Image(systemName: "hare.fill")
-                        .font(.system(size: 23))
+                HStack{
+                    Image("Logo")
                         .font(.custom("Outfit-Bold", size: 40))
-                        .foregroundColor(.red)
-                    Text("Epic App")
+                    Text("EasyPC")
                         .font(.system(size: 26))
                         .foregroundColor(.black.opacity(0.80))
                 }
@@ -36,7 +34,7 @@ struct SplashScreenView: View {
                 }
             }
             .onAppear{
-                DispatchQueue.main.asyncAfter(deadline: .now() + 4.0){
+                DispatchQueue.main.asyncAfter(deadline: .now() + 10.0){
                     withAnimation{
                         self.isActive = true
                     }

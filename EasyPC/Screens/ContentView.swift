@@ -28,7 +28,7 @@ struct ContentView: View {
                         .clipShape(Rectangle())
                         .cornerRadius(10)
                         .padding(.horizontal)
-                    }
+                    } // end of navigationLink
                 }
                 HStack{
                     TextField("Search builds here", text: $searchText)
@@ -92,20 +92,41 @@ struct ContentView: View {
                 }
                 Divider()
                     .padding(.horizontal)
-                Rectangle()
+                Image("gaming")
+                    .resizable()
                     .padding(.horizontal)
-                    .frame(width: .infinity, height: 200, alignment: .center)
-                    .cornerRadius(35)
+                    .scaledToFit()
+                    .cornerRadius(23)
+                    .aspectRatio(contentMode: .fill)
                     .foregroundColor(Color("Purple"))
                     .overlay(
-                        HStack{
-                            Button("Select Build", action: {
-                                
-                            })
-                            .padding()
-                            .foregroundColor(.white)
-                            .background(.blue)
-                            .clipShape(Capsule())
+                        ZStack{
+                            Color("Purple")
+                                .opacity(0.7)
+                                .cornerRadius(20)
+                                .padding(.horizontal)
+                            VStack{
+                                VStack{
+                                    Text("Gaming")
+                                        .foregroundColor(Color("White"))
+                                    Text("Choose this build type to see everything you would need for a gaming build")
+                                        .padding()
+                                        .foregroundColor(Color("White"))
+                                }// end of HStack
+                                HStack{
+                                    Spacer()
+                                    Button("Select Build"){
+                                        
+                                    }
+                                    .padding()
+                                    .foregroundColor(.white)
+                                    .background(.blue)
+                                    .clipShape(Capsule())
+                                    .padding()
+                                }
+
+                            } // end of VStack
+
                         }
                     )
             }
