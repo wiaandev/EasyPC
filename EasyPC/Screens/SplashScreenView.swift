@@ -17,15 +17,30 @@ struct SplashScreenView: View {
             ContentView()
         } else {
             VStack {
-                HStack{
+                HStack(spacing: 20){
                     Image("Logo")
-                        .font(.custom("Outfit-Bold", size: 40))
-                    Text("EasyPC")
-                        .font(.system(size: 26))
-                        .foregroundColor(.black.opacity(0.80))
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 90)
+                    
+                    VStack(alignment: .leading, spacing: 0){
+                        LinearGradient(
+                            colors: [Color("Purple"), Color("Blue")],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                        .frame(width: 143, height: 40)
+                        .mask(
+                            Text("EasyPC")
+                                .fontWeight(.bold)
+                                .font(.system(size: 40))
+                        )
+                        Text("PC Building Made Simple")
+                            .font(.system(size: 12))
+                            .foregroundColor(Color("Blue"))
+                    }
                 }
                 .scaleEffect(size)
-                .opacity(opacity)
                 .onAppear {
                     withAnimation(.easeIn(duration: 1.2)){
                         self.size = 0.9
@@ -34,7 +49,7 @@ struct SplashScreenView: View {
                 }
             }
             .onAppear{
-                DispatchQueue.main.asyncAfter(deadline: .now() + 10.0){
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5.0){
                     withAnimation{
                         self.isActive = true
                     }

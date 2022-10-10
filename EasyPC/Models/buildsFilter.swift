@@ -7,10 +7,8 @@
 
 import SwiftUI
 
-struct buildTypes: Identifiable{
+struct buildsFilter: Identifiable{
     var id = UUID()
     var name: String
-    var desc: String
-    var tools: [String]
-    var parts: [String]
+    var icon: String
 }
