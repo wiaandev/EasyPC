@@ -16,6 +16,7 @@
 		BD37F7BD28F4D39000B53B6A /* buildTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37F7BC28F4D39000B53B6A /* buildTypes.swift */; };
 		BD37F7BF28F4D8E500B53B6A /* buildInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37F7BE28F4D8E500B53B6A /* buildInfo.swift */; };
 		BD37F7C128F4DDDD00B53B6A /* buildInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37F7C028F4DDDD00B53B6A /* buildInfoData.swift */; };
+		BD83648528F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD83648428F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg */; };
 		BDB177C428F34C0E00EB33DD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB177C328F34C0D00EB33DD /* SettingsView.swift */; };
 		BDFE490E28F303D2008F00A4 /* EasyPCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE490D28F303D2008F00A4 /* EasyPCApp.swift */; };
 		BDFE491028F303D2008F00A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE490F28F303D2008F00A4 /* ContentView.swift */; };
@@ -34,6 +35,7 @@
 		BD37F7BC28F4D39000B53B6A /* buildTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildTypes.swift; sourceTree = "<group>"; };
 		BD37F7BE28F4D8E500B53B6A /* buildInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildInfo.swift; sourceTree = "<group>"; };
 		BD37F7C028F4DDDD00B53B6A /* buildInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildInfoData.swift; sourceTree = "<group>"; };
+		BD83648428F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot_20210510_090107_com.whatsapp_2.jpg; sourceTree = "<group>"; };
 		BDB177C328F34C0D00EB33DD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BDFE490A28F303D2008F00A4 /* EasyPC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyPC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFE490D28F303D2008F00A4 /* EasyPCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPCApp.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				BDB177C128F34AF700EB33DD /* Models */,
 				BDFE490D28F303D2008F00A4 /* EasyPCApp.swift */,
 				BDFE491128F303D3008F00A4 /* Assets.xcassets */,
+				BD83648428F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg */,
 				BDFE491328F303D3008F00A4 /* EasyPC.entitlements */,
 				BDFE491428F303D3008F00A4 /* Preview Content */,
 			);
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDFE491628F303D3008F00A4 /* Preview Assets.xcassets in Resources */,
+				BD83648528F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg in Resources */,
 				BDFE491228F303D3008F00A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
