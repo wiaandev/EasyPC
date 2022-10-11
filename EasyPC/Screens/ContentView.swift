@@ -48,10 +48,17 @@ struct ContentView: View {
                     }
                     ScrollView(.horizontal){
                         HStack(spacing: 0){
-                            Button("\(buildFilter.name)", action: {
-                                print("Hello World")
-                            })
-                            .frame(width: 75, height: 25)
+                            Button{
+                                
+                            } label: {
+                                VStack{
+                                    Image(systemName: "\(buildFilter.icon)")
+                                    Text("\(buildFilter.name)")
+                                }
+                                
+                            }
+                            .lineLimit(nil)
+                            .frame(width: .infinity, height: 25)
                             .padding()
                             .foregroundColor(Color("Purple"))
                             .overlay(
@@ -111,25 +118,27 @@ struct ContentView: View {
                         .padding(.horizontal)
                     Image("gaming")
                         .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 350, height: 250)
                         .padding(.horizontal)
-                        .cornerRadius(23)
-                        .aspectRatio(contentMode: .fit)
+                        .cornerRadius(20)
                         .foregroundColor(Color("Purple"))
                         .overlay(
                             ZStack{
                                 Color("Purple")
                                     .opacity(0.7)
                                     .cornerRadius(20)
-                                    .padding(.horizontal)
+                                    .padding(.horizontal, 15)
                                 VStack{
                                     VStack(alignment: .leading, spacing: 0){
                                         Text("Gaming")
                                             .foregroundColor(Color("White"))
                                             .font(.system(size: 36))
                                             .fontWeight(.bold)
-                                            .padding(.horizontal)
+                                            .padding([.horizontal, .top])
                                         Text("Choose this build type to see everything you would need for a gaming build")
-                                            .padding()
+                                            .padding(25)
+                                            .italic(true)
                                             .foregroundColor(Color("White"))
                                     }// end of HStack
                                     HStack{
@@ -141,7 +150,7 @@ struct ContentView: View {
                                         .foregroundColor(.white)
                                         .background(Color("Blue"))
                                         .clipShape(Capsule())
-                                        .padding(.horizontal, 25)
+                                        .padding(.horizontal, 35)
                                     }
                                     
                                 } // end of VStack
@@ -151,37 +160,41 @@ struct ContentView: View {
                     
                     Image("gaming")
                         .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 350, height: 250)
                         .padding(.horizontal)
-                        .cornerRadius(23)
-                        .aspectRatio(contentMode: .fit)
+                        .cornerRadius(20)
                         .foregroundColor(Color("Purple"))
                         .overlay(
                             ZStack{
                                 Color("Purple")
                                     .opacity(0.7)
                                     .cornerRadius(20)
-                                    .padding(.horizontal)
+                                    .padding(.horizontal, 15)
                                 VStack{
                                     VStack(alignment: .leading, spacing: 0){
                                         Text("Gaming")
                                             .foregroundColor(Color("White"))
                                             .font(.system(size: 36))
                                             .fontWeight(.bold)
-                                            .padding(.horizontal)
+                                            .padding([.horizontal, .top])
                                         Text("Choose this build type to see everything you would need for a gaming build")
-                                            .padding()
+                                            .padding(25)
+                                            .italic(true)
                                             .foregroundColor(Color("White"))
                                     }// end of HStack
                                     HStack{
                                         Spacer()
-                                        Button("Select Build"){
-                                            
+                                        NavigationLink(destination: SelectedView()){
+                                            Button("Select Build"){
+                                                
+                                            }
+                                            .padding()
+                                            .foregroundColor(.white)
+                                            .background(Color("Blue"))
+                                            .clipShape(Capsule())
+                                            .padding(.horizontal, 35)
                                         }
-                                        .padding()
-                                        .foregroundColor(.white)
-                                        .background(Color("Blue"))
-                                        .clipShape(Capsule())
-                                        .padding(.horizontal, 25)
                                     }
                                     
                                 } // end of VStack
