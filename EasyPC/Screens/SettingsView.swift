@@ -26,21 +26,30 @@ struct SettingsView: View {
                         Spacer()
                     }
                     HStack(spacing: 0){
-                        Text("Settings")
-                            .fontWeight(.bold)
-                            .font(.system(size: 45))
-                            .padding([.horizontal, .bottom])
+                        LinearGradient(
+                            colors: [Color("Purple"), Color("Blue")],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                        .frame(width: .infinity, height: 100, alignment: .leading)
+                        .mask(
+                            Text("Settings")
+                                .fontWeight(.bold)
+                                .font(.system(size: 40))
+                        )
                         Spacer()
                     }
                     HStack(spacing: 0){
                         Text("About The App")
                             .padding(.horizontal)
                             .fontWeight(.bold)
+                            .foregroundColor(Color("Blue"))
                         Spacer()
                     }
                     HStack(spacing: 0){
                         Text("Hi! Welcome to EasyPC. This is an app that guides users on building their very own computer. Whether it be for personal use or something that you want to use for work, EasyPC can help and show you that it is not as scary and daunting as it looks.")
                             .padding()
+                            .foregroundColor(Color("Purple"))
                     }
                     Divider()
                         .padding(.horizontal)
@@ -48,12 +57,14 @@ struct SettingsView: View {
                         Text("Appearance")
                             .fontWeight(.bold)
                             .padding()
+                            .foregroundColor(Color("Blue"))
                         Spacer()
                     }
                     HStack{
                         Toggle("Dark Mode" ,isOn: $showGreeting)
                             .toggleStyle(SwitchToggleStyle(tint: Color("Purple")))
                             .padding(.horizontal)
+                            .foregroundColor(Color("Purple"))
                         Spacer()
                     }
                     Divider()
@@ -61,13 +72,16 @@ struct SettingsView: View {
                         Text("The Developer")
                             .fontWeight(.bold)
                             .padding()
+                            .foregroundColor(Color("Blue"))
                         Spacer()
                     }
                     VStack(spacing: 10){
                         Text("Hi, my name is Wiaan Duvenhage! I am a 2nd year full-stack developer student at The Open Window")
                             .padding(.horizontal)
+                            .foregroundColor(Color("Purple"))
                         Text("What do you think about EasyPC? Let me know by reporting a bug on my github  page linked below")
                             .padding(.horizontal)
+                            .foregroundColor(Color("Purple"))
                         
                         Image("wiaan")
                             .resizable()
@@ -75,7 +89,25 @@ struct SettingsView: View {
                             .frame(width: 70)
                             .cornerRadius(15)
                         Text("This is me")
+                            .foregroundColor(Color("Purple"))
+                            .padding(.bottom)
+                        
+                        HStack{
+                            Image("github")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 45)
+                                .padding(.bottom)
+                            Text("wiaandev/EasyPC")
+                                .padding(.bottom)
+                                .foregroundColor(Color("Purple"))
+                        }
+                        
+                        Text("EasyPC v1.0")
+                            .foregroundColor(Color("Purple"))
+                        
                     }
+
 
                 }
             }
