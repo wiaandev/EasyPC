@@ -11,5 +11,6 @@ struct buildInfo: Identifiable{
     var id = UUID()
     var name: String
     var desc: String
+    var image: String
 }
 

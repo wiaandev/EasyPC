@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var searchText = ""
     @State var navigationBarBackButton = true
-    var buildFilter: buildsFilter = buildTypes[1]
+    @State var buildFilter: buildsFilter = buildTypes[1]
+    @State var buildInfo: [buildInfo] = buildInfoData
     var body: some View {
         NavigationView{
             VStack{
@@ -96,7 +97,6 @@ struct ContentView: View {
                     HStack{
                         Text("Our Builds")
                             .padding(.horizontal)
-                            .foregroundColor(Color("Purple"))
                             .font(.system(size: 40))
                             .fontWeight(.bold)
                             .foregroundStyle(                    LinearGradient(
@@ -116,91 +116,14 @@ struct ContentView: View {
                     }
                     Divider()
                         .padding(.horizontal)
-                    Image("gaming")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 350, height: 250)
-                        .padding(.horizontal)
-                        .cornerRadius(20)
-                        .foregroundColor(Color("Purple"))
-                        .overlay(
-                            ZStack{
-                                Color("Purple")
-                                    .opacity(0.7)
-                                    .cornerRadius(20)
-                                    .padding(.horizontal, 15)
-                                VStack{
-                                    VStack(alignment: .leading, spacing: 0){
-                                        Text("Gaming")
-                                            .foregroundColor(Color("White"))
-                                            .font(.system(size: 36))
-                                            .fontWeight(.bold)
-                                            .padding([.horizontal, .top])
-                                        Text("Choose this build type to see everything you would need for a gaming build")
-                                            .padding(25)
-                                            .italic(true)
-                                            .foregroundColor(Color("White"))
-                                    }// end of HStack
-                                    HStack{
-                                        Spacer()
-                                        Button("Select Build"){
-                                            
-                                        }
-                                        .padding()
-                                        .foregroundColor(.white)
-                                        .background(Color("Blue"))
-                                        .clipShape(Capsule())
-                                        .padding(.horizontal, 35)
-                                    }
-                                    
-                                } // end of VStack
-                                
-                            }
-                        )
                     
-                    Image("gaming")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 350, height: 250)
-                        .padding(.horizontal)
-                        .cornerRadius(20)
-                        .foregroundColor(Color("Purple"))
-                        .overlay(
-                            ZStack{
-                                Color("Purple")
-                                    .opacity(0.7)
-                                    .cornerRadius(20)
-                                    .padding(.horizontal, 15)
-                                VStack{
-                                    VStack(alignment: .leading, spacing: 0){
-                                        Text("Gaming")
-                                            .foregroundColor(Color("White"))
-                                            .font(.system(size: 36))
-                                            .fontWeight(.bold)
-                                            .padding([.horizontal, .top])
-                                        Text("Choose this build type to see everything you would need for a gaming build")
-                                            .padding(25)
-                                            .italic(true)
-                                            .foregroundColor(Color("White"))
-                                    }// end of HStack
-                                    HStack{
-                                        Spacer()
-                                        NavigationLink(destination: SelectedView()){
-                                            Button("Select Build"){
-                                                
-                                            }
-                                            .padding()
-                                            .foregroundColor(.white)
-                                            .background(Color("Blue"))
-                                            .clipShape(Capsule())
-                                            .padding(.horizontal, 35)
-                                        }
-                                    }
-                                    
-                                } // end of VStack
-                                
+                    NavigationLink(destination: SelectedView()){
+                        VStack{
+                            ForEach(buildInfo){ i in
+                                BuildCardView(builds: i)
                             }
-                        )
+                        }
+                    }
                 }
             }
         }
