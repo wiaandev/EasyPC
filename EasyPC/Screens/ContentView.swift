@@ -44,7 +44,7 @@ struct ContentView: View {
                         Text("Quick Filter")
                             .foregroundColor(Color("Purple"))
                             .padding(.horizontal)
-                            .font(.custom(FontsManager.Outfit.regular, size: 16))
+                            .font(.system(size: 16))
                         Spacer()
                     }
                     ScrollView(.horizontal){

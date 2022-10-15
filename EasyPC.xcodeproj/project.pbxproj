@@ -12,7 +12,6 @@
 		BD0C145A28F37C2C002A5A55 /* SelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145928F37C2C002A5A55 /* SelectedView.swift */; };
 		BD0C145C28F37C4F002A5A55 /* BuildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145B28F37C4F002A5A55 /* BuildView.swift */; };
 		BD0C145E28F37C6A002A5A55 /* BuildStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145D28F37C6A002A5A55 /* BuildStartView.swift */; };
-		BD37F7BA28F4CF2700B53B6A /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37F7B928F4CF2700B53B6A /* FontsManager.swift */; };
 		BD37F7BD28F4D39000B53B6A /* buildTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37F7BC28F4D39000B53B6A /* buildTypes.swift */; };
 		BD37F7BF28F4D8E500B53B6A /* buildInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37F7BE28F4D8E500B53B6A /* buildInfo.swift */; };
 		BD37F7C128F4DDDD00B53B6A /* buildInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37F7C028F4DDDD00B53B6A /* buildInfoData.swift */; };
@@ -20,7 +19,10 @@
 		BDB177C428F34C0E00EB33DD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB177C328F34C0D00EB33DD /* SettingsView.swift */; };
 		BDD1A28628FB04E8002712A5 /* BuildCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A28528FB04E8002712A5 /* BuildCardView.swift */; };
 		BDD1A28828FB316B002712A5 /* FilterCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A28728FB316B002712A5 /* FilterCardView.swift */; };
-		BDDA686828F5C9CF0036BE1F /* OnboardingOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA686728F5C9CF0036BE1F /* OnboardingOne.swift */; };
+		BDD1A28A28FB3588002712A5 /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A28928FB3588002712A5 /* OnboardView.swift */; };
+		BDD1A28E28FB362D002712A5 /* Onboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A28D28FB362D002712A5 /* Onboard.swift */; };
+		BDD1A29028FB367F002712A5 /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A28F28FB367F002712A5 /* OnboardingData.swift */; };
+		BDDA686828F5C9CF0036BE1F /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA686728F5C9CF0036BE1F /* Onboarding.swift */; };
 		BDFE490E28F303D2008F00A4 /* EasyPCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE490D28F303D2008F00A4 /* EasyPCApp.swift */; };
 		BDFE491028F303D2008F00A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE490F28F303D2008F00A4 /* ContentView.swift */; };
 		BDFE491228F303D3008F00A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFE491128F303D3008F00A4 /* Assets.xcassets */; };
@@ -30,11 +32,9 @@
 /* Begin PBXFileReference section */
 		BD0C145128F35206002A5A55 /* buildsFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildsFilter.swift; sourceTree = "<group>"; };
 		BD0C145328F37139002A5A55 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
-		BD0C145828F37517002A5A55 /* Outfit-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Outfit-Bold.ttf"; path = "../../../../../../../Downloads/Outfit/static/Outfit-Bold.ttf"; sourceTree = "<group>"; };
 		BD0C145928F37C2C002A5A55 /* SelectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedView.swift; sourceTree = "<group>"; };
 		BD0C145B28F37C4F002A5A55 /* BuildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildView.swift; sourceTree = "<group>"; };
 		BD0C145D28F37C6A002A5A55 /* BuildStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildStartView.swift; sourceTree = "<group>"; };
-		BD37F7B928F4CF2700B53B6A /* FontsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsManager.swift; sourceTree = "<group>"; };
 		BD37F7BC28F4D39000B53B6A /* buildTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildTypes.swift; sourceTree = "<group>"; };
 		BD37F7BE28F4D8E500B53B6A /* buildInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildInfo.swift; sourceTree = "<group>"; };
 		BD37F7C028F4DDDD00B53B6A /* buildInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildInfoData.swift; sourceTree = "<group>"; };
@@ -42,7 +42,10 @@
 		BDB177C328F34C0D00EB33DD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BDD1A28528FB04E8002712A5 /* BuildCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildCardView.swift; sourceTree = "<group>"; };
 		BDD1A28728FB316B002712A5 /* FilterCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCardView.swift; sourceTree = "<group>"; };
-		BDDA686728F5C9CF0036BE1F /* OnboardingOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingOne.swift; sourceTree = "<group>"; };
+		BDD1A28928FB3588002712A5 /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
+		BDD1A28D28FB362D002712A5 /* Onboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboard.swift; sourceTree = "<group>"; };
+		BDD1A28F28FB367F002712A5 /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
+		BDDA686728F5C9CF0036BE1F /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		BDFE490A28F303D2008F00A4 /* EasyPC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyPC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFE490D28F303D2008F00A4 /* EasyPCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPCApp.swift; sourceTree = "<group>"; };
 		BDFE490F28F303D2008F00A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,28 +65,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BD0C145528F374C6002A5A55 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				BD0C145628F374DA002A5A55 /* Fonts */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		BD0C145628F374DA002A5A55 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				BD0C145828F37517002A5A55 /* Outfit-Bold.ttf */,
-				BD37F7B928F4CF2700B53B6A /* FontsManager.swift */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		BD37F7BB28F4D34200B53B6A /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				BD37F7BC28F4D39000B53B6A /* buildTypes.swift */,
 				BD37F7C028F4DDDD00B53B6A /* buildInfoData.swift */,
+				BDD1A28F28FB367F002712A5 /* OnboardingData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -93,6 +80,7 @@
 			children = (
 				BD0C145128F35206002A5A55 /* buildsFilter.swift */,
 				BD37F7BE28F4D8E500B53B6A /* buildInfo.swift */,
+				BDD1A28D28FB362D002712A5 /* Onboard.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -106,7 +94,7 @@
 				BD0C145928F37C2C002A5A55 /* SelectedView.swift */,
 				BD0C145B28F37C4F002A5A55 /* BuildView.swift */,
 				BD0C145D28F37C6A002A5A55 /* BuildStartView.swift */,
-				BDDA686728F5C9CF0036BE1F /* OnboardingOne.swift */,
+				BDDA686728F5C9CF0036BE1F /* Onboarding.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -116,6 +104,7 @@
 			children = (
 				BDD1A28528FB04E8002712A5 /* BuildCardView.swift */,
 				BDD1A28728FB316B002712A5 /* FilterCardView.swift */,
+				BDD1A28928FB3588002712A5 /* OnboardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -141,7 +130,6 @@
 			children = (
 				BDD1A28428FB04C8002712A5 /* Views */,
 				BD37F7BB28F4D34200B53B6A /* Data */,
-				BD0C145528F374C6002A5A55 /* Assets */,
 				BDB177C228F34B0700EB33DD /* Screens */,
 				BDB177C128F34AF700EB33DD /* Models */,
 				BDFE490D28F303D2008F00A4 /* EasyPCApp.swift */,
@@ -233,18 +221,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD0C145E28F37C6A002A5A55 /* BuildStartView.swift in Sources */,
+				BDD1A28A28FB3588002712A5 /* OnboardView.swift in Sources */,
 				BD0C145228F35206002A5A55 /* buildsFilter.swift in Sources */,
 				BDB177C428F34C0E00EB33DD /* SettingsView.swift in Sources */,
 				BD0C145428F37139002A5A55 /* SplashScreenView.swift in Sources */,
 				BDFE491028F303D2008F00A4 /* ContentView.swift in Sources */,
 				BDFE490E28F303D2008F00A4 /* EasyPCApp.swift in Sources */,
-				BD37F7BA28F4CF2700B53B6A /* FontsManager.swift in Sources */,
 				BD0C145A28F37C2C002A5A55 /* SelectedView.swift in Sources */,
 				BD37F7C128F4DDDD00B53B6A /* buildInfoData.swift in Sources */,
-				BDDA686828F5C9CF0036BE1F /* OnboardingOne.swift in Sources */,
+				BDDA686828F5C9CF0036BE1F /* Onboarding.swift in Sources */,
+				BDD1A29028FB367F002712A5 /* OnboardingData.swift in Sources */,
 				BDD1A28828FB316B002712A5 /* FilterCardView.swift in Sources */,
 				BD37F7BD28F4D39000B53B6A /* buildTypes.swift in Sources */,
 				BDD1A28628FB04E8002712A5 /* BuildCardView.swift in Sources */,
+				BDD1A28E28FB362D002712A5 /* Onboard.swift in Sources */,
 				BD37F7BF28F4D8E500B53B6A /* buildInfo.swift in Sources */,
 				BD0C145C28F37C4F002A5A55 /* BuildView.swift in Sources */,
 			);
