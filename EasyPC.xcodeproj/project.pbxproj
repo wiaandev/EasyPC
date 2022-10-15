@@ -19,6 +19,7 @@
 		BD83648528F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD83648428F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg */; };
 		BDB177C428F34C0E00EB33DD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB177C328F34C0D00EB33DD /* SettingsView.swift */; };
 		BDD1A28628FB04E8002712A5 /* BuildCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A28528FB04E8002712A5 /* BuildCardView.swift */; };
+		BDD1A28828FB316B002712A5 /* FilterCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A28728FB316B002712A5 /* FilterCardView.swift */; };
 		BDDA686828F5C9CF0036BE1F /* OnboardingOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA686728F5C9CF0036BE1F /* OnboardingOne.swift */; };
 		BDFE490E28F303D2008F00A4 /* EasyPCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE490D28F303D2008F00A4 /* EasyPCApp.swift */; };
 		BDFE491028F303D2008F00A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE490F28F303D2008F00A4 /* ContentView.swift */; };
@@ -40,6 +41,7 @@
 		BD83648428F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot_20210510_090107_com.whatsapp_2.jpg; sourceTree = "<group>"; };
 		BDB177C328F34C0D00EB33DD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BDD1A28528FB04E8002712A5 /* BuildCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildCardView.swift; sourceTree = "<group>"; };
+		BDD1A28728FB316B002712A5 /* FilterCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCardView.swift; sourceTree = "<group>"; };
 		BDDA686728F5C9CF0036BE1F /* OnboardingOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingOne.swift; sourceTree = "<group>"; };
 		BDFE490A28F303D2008F00A4 /* EasyPC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyPC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFE490D28F303D2008F00A4 /* EasyPCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPCApp.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				BDD1A28528FB04E8002712A5 /* BuildCardView.swift */,
+				BDD1A28728FB316B002712A5 /* FilterCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				BD0C145A28F37C2C002A5A55 /* SelectedView.swift in Sources */,
 				BD37F7C128F4DDDD00B53B6A /* buildInfoData.swift in Sources */,
 				BDDA686828F5C9CF0036BE1F /* OnboardingOne.swift in Sources */,
+				BDD1A28828FB316B002712A5 /* FilterCardView.swift in Sources */,
 				BD37F7BD28F4D39000B53B6A /* buildTypes.swift in Sources */,
 				BDD1A28628FB04E8002712A5 /* BuildCardView.swift in Sources */,
 				BD37F7BF28F4D8E500B53B6A /* buildInfo.swift in Sources */,

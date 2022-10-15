@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var searchText = ""
     @State var navigationBarBackButton = true
-    @State var buildFilter: buildsFilter = buildTypes[1]
+    @State var buildFilter: [buildsFilter] = buildTypes
     @State var buildInfo: [buildInfo] = buildInfoData
     var body: some View {
         NavigationView{
@@ -49,47 +49,10 @@ struct ContentView: View {
                     }
                     ScrollView(.horizontal){
                         HStack(spacing: 0){
-                            Button{
-                                
-                            } label: {
-                                VStack{
-                                    Image(systemName: "\(buildFilter.icon)")
-                                    Text("\(buildFilter.name)")
-                                }
-                                
+                            ForEach(buildFilter) { i in
+//                                Text(i.name)
+                                FilterCardView(filters: i)
                             }
-                            .lineLimit(nil)
-                            .frame(width: .infinity, height: 25)
-                            .padding()
-                            .foregroundColor(Color("Purple"))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10).stroke(Color("Purple"), lineWidth: 1))
-                            .padding(.horizontal)
-                            
-                            Button{
-                                
-                            } label: {
-                                VStack{
-                                    Image(systemName: "\(buildFilter.icon)")
-                                    Text("Gaming")
-                                }
-                                
-                            }
-                            .frame(width: 75, height: 25)
-                            .padding()
-                            .foregroundColor(Color("Purple"))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10).stroke(Color("Purple"), lineWidth: 1))
-                            .padding(.horizontal)
-                            Button("Gaming", action: {
-                                print("Hello World")
-                            })
-                            .frame(width: 75, height: 25)
-                            .padding()
-                            .foregroundColor(Color("Purple"))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10).stroke(Color("Purple"), lineWidth: 1))
-                            .padding(.horizontal)
                         }
                         
                     }
@@ -120,7 +83,7 @@ struct ContentView: View {
                     NavigationLink(destination: SelectedView()){
                         VStack{
                             ForEach(buildInfo){ i in
-                                BuildCardView(builds: i)
+                                BuildCardView(builds: i )
                             }
                         }
                     }
