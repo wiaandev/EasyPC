@@ -10,13 +10,16 @@
 		BD0C145228F35206002A5A55 /* buildsFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145128F35206002A5A55 /* buildsFilter.swift */; };
 		BD0C145428F37139002A5A55 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145328F37139002A5A55 /* SplashScreenView.swift */; };
 		BD0C145A28F37C2C002A5A55 /* SelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145928F37C2C002A5A55 /* SelectedView.swift */; };
-		BD0C145C28F37C4F002A5A55 /* BuildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145B28F37C4F002A5A55 /* BuildView.swift */; };
+		BD0C145C28F37C4F002A5A55 /* BudgetSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145B28F37C4F002A5A55 /* BudgetSelect.swift */; };
 		BD0C145E28F37C6A002A5A55 /* BuildStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145D28F37C6A002A5A55 /* BuildStartView.swift */; };
 		BD37F7BD28F4D39000B53B6A /* buildTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37F7BC28F4D39000B53B6A /* buildTypes.swift */; };
 		BD37F7BF28F4D8E500B53B6A /* buildInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37F7BE28F4D8E500B53B6A /* buildInfo.swift */; };
 		BD37F7C128F4DDDD00B53B6A /* buildInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37F7C028F4DDDD00B53B6A /* buildInfoData.swift */; };
 		BD83648528F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD83648428F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg */; };
 		BDB177C428F34C0E00EB33DD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB177C328F34C0D00EB33DD /* SettingsView.swift */; };
+		BDC1FC9B28FDF9970098B44E /* BudgetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC1FC9A28FDF9970098B44E /* BudgetCardView.swift */; };
+		BDC1FC9D28FE03D10098B44E /* PartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC1FC9C28FE03D10098B44E /* PartView.swift */; };
+		BDC1FC9F28FE0F0A0098B44E /* InstructionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC1FC9E28FE0F0A0098B44E /* InstructionCardView.swift */; };
 		BDD1A28628FB04E8002712A5 /* BuildCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A28528FB04E8002712A5 /* BuildCardView.swift */; };
 		BDD1A28828FB316B002712A5 /* FilterCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A28728FB316B002712A5 /* FilterCardView.swift */; };
 		BDD1A28A28FB3588002712A5 /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A28928FB3588002712A5 /* OnboardView.swift */; };
@@ -33,13 +36,16 @@
 		BD0C145128F35206002A5A55 /* buildsFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildsFilter.swift; sourceTree = "<group>"; };
 		BD0C145328F37139002A5A55 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		BD0C145928F37C2C002A5A55 /* SelectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedView.swift; sourceTree = "<group>"; };
-		BD0C145B28F37C4F002A5A55 /* BuildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildView.swift; sourceTree = "<group>"; };
+		BD0C145B28F37C4F002A5A55 /* BudgetSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetSelect.swift; sourceTree = "<group>"; };
 		BD0C145D28F37C6A002A5A55 /* BuildStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildStartView.swift; sourceTree = "<group>"; };
 		BD37F7BC28F4D39000B53B6A /* buildTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildTypes.swift; sourceTree = "<group>"; };
 		BD37F7BE28F4D8E500B53B6A /* buildInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildInfo.swift; sourceTree = "<group>"; };
 		BD37F7C028F4DDDD00B53B6A /* buildInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildInfoData.swift; sourceTree = "<group>"; };
 		BD83648428F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot_20210510_090107_com.whatsapp_2.jpg; sourceTree = "<group>"; };
 		BDB177C328F34C0D00EB33DD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BDC1FC9A28FDF9970098B44E /* BudgetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCardView.swift; sourceTree = "<group>"; };
+		BDC1FC9C28FE03D10098B44E /* PartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartView.swift; sourceTree = "<group>"; };
+		BDC1FC9E28FE0F0A0098B44E /* InstructionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionCardView.swift; sourceTree = "<group>"; };
 		BDD1A28528FB04E8002712A5 /* BuildCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildCardView.swift; sourceTree = "<group>"; };
 		BDD1A28728FB316B002712A5 /* FilterCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCardView.swift; sourceTree = "<group>"; };
 		BDD1A28928FB3588002712A5 /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
@@ -92,7 +98,7 @@
 				BDB177C328F34C0D00EB33DD /* SettingsView.swift */,
 				BD0C145328F37139002A5A55 /* SplashScreenView.swift */,
 				BD0C145928F37C2C002A5A55 /* SelectedView.swift */,
-				BD0C145B28F37C4F002A5A55 /* BuildView.swift */,
+				BD0C145B28F37C4F002A5A55 /* BudgetSelect.swift */,
 				BD0C145D28F37C6A002A5A55 /* BuildStartView.swift */,
 				BDDA686728F5C9CF0036BE1F /* Onboarding.swift */,
 			);
@@ -105,6 +111,9 @@
 				BDD1A28528FB04E8002712A5 /* BuildCardView.swift */,
 				BDD1A28728FB316B002712A5 /* FilterCardView.swift */,
 				BDD1A28928FB3588002712A5 /* OnboardView.swift */,
+				BDC1FC9A28FDF9970098B44E /* BudgetCardView.swift */,
+				BDC1FC9C28FE03D10098B44E /* PartView.swift */,
+				BDC1FC9E28FE0F0A0098B44E /* InstructionCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +233,7 @@
 				BDD1A28A28FB3588002712A5 /* OnboardView.swift in Sources */,
 				BD0C145228F35206002A5A55 /* buildsFilter.swift in Sources */,
 				BDB177C428F34C0E00EB33DD /* SettingsView.swift in Sources */,
+				BDC1FC9D28FE03D10098B44E /* PartView.swift in Sources */,
 				BD0C145428F37139002A5A55 /* SplashScreenView.swift in Sources */,
 				BDFE491028F303D2008F00A4 /* ContentView.swift in Sources */,
 				BDFE490E28F303D2008F00A4 /* EasyPCApp.swift in Sources */,
@@ -234,9 +244,11 @@
 				BDD1A28828FB316B002712A5 /* FilterCardView.swift in Sources */,
 				BD37F7BD28F4D39000B53B6A /* buildTypes.swift in Sources */,
 				BDD1A28628FB04E8002712A5 /* BuildCardView.swift in Sources */,
+				BDC1FC9F28FE0F0A0098B44E /* InstructionCardView.swift in Sources */,
 				BDD1A28E28FB362D002712A5 /* Onboard.swift in Sources */,
+				BDC1FC9B28FDF9970098B44E /* BudgetCardView.swift in Sources */,
 				BD37F7BF28F4D8E500B53B6A /* buildInfo.swift in Sources */,
-				BD0C145C28F37C4F002A5A55 /* BuildView.swift in Sources */,
+				BD0C145C28F37C4F002A5A55 /* BudgetSelect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

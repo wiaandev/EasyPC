@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct Onboarding: View {
+    
+
+    
+    @State var onboard: [Onboard] = OnboardingData
     var body: some View {
         VStack{
             TabView{
-                OnboardView()
-                OnboardView()
-                OnboardView()
+                ForEach(onboard) { onboard in
+                    OnboardView(onboard: onboard)
+                }
             }
             .ignoresSafeArea(.all)
             .tabViewStyle(.page)

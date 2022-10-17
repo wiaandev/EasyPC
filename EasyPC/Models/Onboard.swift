@@ -13,4 +13,5 @@ struct Onboard: Identifiable {
     var subTitle: String
     var description: String
     var image: String
+    var btnText: String
 }

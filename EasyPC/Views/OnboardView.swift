@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct OnboardView: View {
+    
+    @AppStorage("onboardingComplete") var onboardingComplete = false
+    
+    var onboard: Onboard
+    
     var body: some View {
         ZStack{
             Rectangle()
@@ -15,7 +20,7 @@ struct OnboardView: View {
                 .foregroundColor(Color("Purple"))
             VStack(spacing: 0){
                 HStack{
-                    Text("Hey!")
+                    Text(onboard.title)
                         .padding(.horizontal, 40)
                         .foregroundColor(Color("White"))
                         .fontWeight(.bold)
@@ -23,7 +28,7 @@ struct OnboardView: View {
                     Spacer()
                 } // end of HStack
                 HStack{
-                    Text("Welcome to EasyPC")
+                    Text(onboard.subTitle)
                         .padding([.horizontal, .bottom], 40)
                         .foregroundColor(Color("White"))
                         .font(.system(size: 20))
@@ -51,16 +56,17 @@ struct OnboardView: View {
 
                     )
                 HStack{
-                    Text("Select a build by tapping on one of the cards.")
-                        .padding()
+                    Text(onboard.description)
+                        .padding(20)
                         .foregroundColor(Color("White"))
                 }//end of HStack
                 Button{
-                    
+                    onboardingComplete = true
                 } label: {
-                    Text("Next")
+                    Text(onboard.btnText)
                         .foregroundColor(Color("White"))
-                        .padding()
+                        .padding(.horizontal, 50)
+                        .padding(.vertical, 10)
                         .background(Color("Blue"))
                         .clipShape(Capsule())
                 }
@@ -72,6 +78,6 @@ struct OnboardView: View {
 
 struct OnboardView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardView()
+        OnboardView(onboard: OnboardingData[0])
     }
 }
