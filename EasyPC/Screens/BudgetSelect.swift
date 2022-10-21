@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct BudgetSelect: View {
+    
+    @State var partData : [Parts] = PartData
+    
     var body: some View {
         NavigationView{
             ScrollView(.vertical){
@@ -32,30 +35,7 @@ struct BudgetSelect: View {
                         Spacer()
                     }
                     HStack{
-                        RoundedRectangle(cornerRadius: 23)
-                            .frame(width: .infinity, height: 250)
-                            .foregroundColor(Color("Purple"))
-                            .overlay(
-                                VStack(spacing:10){
-                                    Text("Tools")
-                                        .font(.system(size: 45))
-                                        .fontWeight(.bold)
-                                        .foregroundColor(Color("White"))
-                                    Spacer()
-                                    Text("125 mm Star-Point Screwdriver")
-                                        .foregroundColor(Color("White"))
-                                    Text("125 mm Star-Point Screwdriver")
-                                        .foregroundColor(Color("White"))
-                                    Text("125 mm Star-Point Screwdriver")
-                                        .foregroundColor(Color("White"))
-                                    
-                                    Text("125 mm Star-Point Screwdriver")
-                                        .foregroundColor(Color("White"))
-                                    Text("125 mm Star-Point Screwdriver")
-                                        .foregroundColor(Color("White"))
-                                }
-                                .padding()
-                            )
+//                        ToolsView()
                     }
                     HStack{
                         Text("Parts for this build")
@@ -64,9 +44,12 @@ struct BudgetSelect: View {
                             .font(.system(size: 22))
                         Spacer()
                     }
-                    PartView()
-                    PartView()
-                    PartView()
+                    ForEach(partData) { datum in
+                        PartView(partData: datum)
+                    }
+//                    PartView()
+//                    PartView()
+//                    PartView()
                     NavigationLink(destination: BuildStartView()){
                         Button {
                             print("Clicked")

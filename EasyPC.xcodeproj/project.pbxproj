@@ -26,6 +26,11 @@
 		BDD1A28E28FB362D002712A5 /* Onboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A28D28FB362D002712A5 /* Onboard.swift */; };
 		BDD1A29028FB367F002712A5 /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A28F28FB367F002712A5 /* OnboardingData.swift */; };
 		BDDA686828F5C9CF0036BE1F /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA686728F5C9CF0036BE1F /* Onboarding.swift */; };
+		BDE25806290342A500CD408E /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE25805290342A500CD408E /* Budget.swift */; };
+		BDE25808290348DF00CD408E /* BudgetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE25807290348DF00CD408E /* BudgetData.swift */; };
+		BDE2580A29034D2700CD408E /* Parts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2580929034D2700CD408E /* Parts.swift */; };
+		BDE2580C2903556F00CD408E /* PartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2580B2903556F00CD408E /* PartData.swift */; };
+		BDE2580E29035BF200CD408E /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2580D29035BF200CD408E /* ToolsView.swift */; };
 		BDFE490E28F303D2008F00A4 /* EasyPCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE490D28F303D2008F00A4 /* EasyPCApp.swift */; };
 		BDFE491028F303D2008F00A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFE490F28F303D2008F00A4 /* ContentView.swift */; };
 		BDFE491228F303D3008F00A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFE491128F303D3008F00A4 /* Assets.xcassets */; };
@@ -52,6 +57,11 @@
 		BDD1A28D28FB362D002712A5 /* Onboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboard.swift; sourceTree = "<group>"; };
 		BDD1A28F28FB367F002712A5 /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
 		BDDA686728F5C9CF0036BE1F /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		BDE25805290342A500CD408E /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
+		BDE25807290348DF00CD408E /* BudgetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetData.swift; sourceTree = "<group>"; };
+		BDE2580929034D2700CD408E /* Parts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parts.swift; sourceTree = "<group>"; };
+		BDE2580B2903556F00CD408E /* PartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartData.swift; sourceTree = "<group>"; };
+		BDE2580D29035BF200CD408E /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
 		BDFE490A28F303D2008F00A4 /* EasyPC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyPC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFE490D28F303D2008F00A4 /* EasyPCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPCApp.swift; sourceTree = "<group>"; };
 		BDFE490F28F303D2008F00A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +87,8 @@
 				BD37F7BC28F4D39000B53B6A /* buildTypes.swift */,
 				BD37F7C028F4DDDD00B53B6A /* buildInfoData.swift */,
 				BDD1A28F28FB367F002712A5 /* OnboardingData.swift */,
+				BDE25807290348DF00CD408E /* BudgetData.swift */,
+				BDE2580B2903556F00CD408E /* PartData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -85,8 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				BD0C145128F35206002A5A55 /* buildsFilter.swift */,
+				BDE25805290342A500CD408E /* Budget.swift */,
 				BD37F7BE28F4D8E500B53B6A /* buildInfo.swift */,
 				BDD1A28D28FB362D002712A5 /* Onboard.swift */,
+				BDE2580929034D2700CD408E /* Parts.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -114,6 +128,7 @@
 				BDC1FC9A28FDF9970098B44E /* BudgetCardView.swift */,
 				BDC1FC9C28FE03D10098B44E /* PartView.swift */,
 				BDC1FC9E28FE0F0A0098B44E /* InstructionCardView.swift */,
+				BDE2580D29035BF200CD408E /* ToolsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -233,15 +248,20 @@
 				BDD1A28A28FB3588002712A5 /* OnboardView.swift in Sources */,
 				BD0C145228F35206002A5A55 /* buildsFilter.swift in Sources */,
 				BDB177C428F34C0E00EB33DD /* SettingsView.swift in Sources */,
+				BDE2580E29035BF200CD408E /* ToolsView.swift in Sources */,
 				BDC1FC9D28FE03D10098B44E /* PartView.swift in Sources */,
+				BDE25806290342A500CD408E /* Budget.swift in Sources */,
 				BD0C145428F37139002A5A55 /* SplashScreenView.swift in Sources */,
 				BDFE491028F303D2008F00A4 /* ContentView.swift in Sources */,
 				BDFE490E28F303D2008F00A4 /* EasyPCApp.swift in Sources */,
+				BDE2580A29034D2700CD408E /* Parts.swift in Sources */,
+				BDE2580C2903556F00CD408E /* PartData.swift in Sources */,
 				BD0C145A28F37C2C002A5A55 /* SelectedView.swift in Sources */,
 				BD37F7C128F4DDDD00B53B6A /* buildInfoData.swift in Sources */,
 				BDDA686828F5C9CF0036BE1F /* Onboarding.swift in Sources */,
 				BDD1A29028FB367F002712A5 /* OnboardingData.swift in Sources */,
 				BDD1A28828FB316B002712A5 /* FilterCardView.swift in Sources */,
+				BDE25808290348DF00CD408E /* BudgetData.swift in Sources */,
 				BD37F7BD28F4D39000B53B6A /* buildTypes.swift in Sources */,
 				BDD1A28628FB04E8002712A5 /* BuildCardView.swift in Sources */,
 				BDC1FC9F28FE0F0A0098B44E /* InstructionCardView.swift in Sources */,

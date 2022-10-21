@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SelectedView: View {
+    
+    @State var budget: [Budget] = BudgetData
+    
     var body: some View {
         NavigationView{
             ScrollView(.vertical){
@@ -24,10 +27,9 @@ struct SelectedView: View {
                         )
                     Spacer()
                 }
-                BudgetCardView()
-                BudgetCardView()
-                BudgetCardView()
-                BudgetCardView()
+                ForEach(budget) { i in
+                    BudgetCardView(budgetData: i)
+                }
             }
             .padding(30)
         }

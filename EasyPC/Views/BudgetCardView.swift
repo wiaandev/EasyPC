@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct BudgetCardView: View {
+    
+    var budgetData: Budget
+    
     var body: some View {
         VStack{
             RoundedRectangle(cornerRadius: 15)
@@ -16,14 +19,14 @@ struct BudgetCardView: View {
                 .overlay(
                     VStack{
                     HStack{
-                        Text("Low-End")
+                        Text("\(budgetData.title)")
                             .foregroundColor(Color("White"))
                             .font(.system(size: 20))
                             .fontWeight(.bold)
                         Spacer()
                     }.padding(.horizontal,30)
                         HStack{
-                            Text("Some description I want to include")
+                            Text("\(budgetData.desc)")
                                 .foregroundColor(Color("White"))
                             Spacer()
                         }.padding(.horizontal, 30)
@@ -35,6 +38,6 @@ struct BudgetCardView: View {
 
 struct BudgetCardView_Previews: PreviewProvider {
     static var previews: some View {
-        BudgetCardView()
+        BudgetCardView(budgetData: BudgetData[0])
     }
 }

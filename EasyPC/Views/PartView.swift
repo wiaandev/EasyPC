@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PartView: View {
+    
+    var partData: Parts
+    
     var body: some View {
         VStack{
             RoundedRectangle(cornerRadius: 15)
@@ -17,7 +20,7 @@ struct PartView: View {
                     HStack{
                     VStack{
                     HStack{
-                        Text("Part Name")
+                        Text("\(partData.partType)")
                             .foregroundColor(Color("White"))
                             .font(.system(size: 30))
                             .fontWeight(.bold)
@@ -25,12 +28,12 @@ struct PartView: View {
                         Spacer()
                     }.padding(.horizontal,30)
                         HStack{
-                            Text("An ATX Case would do")
+                            Text("\(partData.name)")
                                 .foregroundColor(Color("White"))
                             Spacer()
                         }.padding(.horizontal, 30)
                     }
-                        Image("psu")
+                        Image("\(partData.image)")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: .infinity, height: 150)
@@ -42,6 +45,6 @@ struct PartView: View {
 
 struct PartView_Previews: PreviewProvider {
     static var previews: some View {
-        PartView()
+        PartView(partData: PartData[0])
     }
 }
