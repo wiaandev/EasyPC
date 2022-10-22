@@ -15,6 +15,7 @@
 		BD37F7BD28F4D39000B53B6A /* buildTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37F7BC28F4D39000B53B6A /* buildTypes.swift */; };
 		BD37F7BF28F4D8E500B53B6A /* buildInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37F7BE28F4D8E500B53B6A /* buildInfo.swift */; };
 		BD37F7C128F4DDDD00B53B6A /* buildInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD37F7C028F4DDDD00B53B6A /* buildInfoData.swift */; };
+		BD452CC229045B3C00830F7B /* ToolPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD452CC129045B3C00830F7B /* ToolPillView.swift */; };
 		BD83648528F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD83648428F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg */; };
 		BDB177C428F34C0E00EB33DD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB177C328F34C0D00EB33DD /* SettingsView.swift */; };
 		BDC1FC9B28FDF9970098B44E /* BudgetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC1FC9A28FDF9970098B44E /* BudgetCardView.swift */; };
@@ -46,6 +47,7 @@
 		BD37F7BC28F4D39000B53B6A /* buildTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildTypes.swift; sourceTree = "<group>"; };
 		BD37F7BE28F4D8E500B53B6A /* buildInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildInfo.swift; sourceTree = "<group>"; };
 		BD37F7C028F4DDDD00B53B6A /* buildInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buildInfoData.swift; sourceTree = "<group>"; };
+		BD452CC129045B3C00830F7B /* ToolPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolPillView.swift; sourceTree = "<group>"; };
 		BD83648428F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot_20210510_090107_com.whatsapp_2.jpg; sourceTree = "<group>"; };
 		BDB177C328F34C0D00EB33DD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BDC1FC9A28FDF9970098B44E /* BudgetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCardView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				BDC1FC9C28FE03D10098B44E /* PartView.swift */,
 				BDC1FC9E28FE0F0A0098B44E /* InstructionCardView.swift */,
 				BDE2580D29035BF200CD408E /* ToolsView.swift */,
+				BD452CC129045B3C00830F7B /* ToolPillView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				BDE2580E29035BF200CD408E /* ToolsView.swift in Sources */,
 				BDC1FC9D28FE03D10098B44E /* PartView.swift in Sources */,
 				BDE25806290342A500CD408E /* Budget.swift in Sources */,
+				BD452CC229045B3C00830F7B /* ToolPillView.swift in Sources */,
 				BD0C145428F37139002A5A55 /* SplashScreenView.swift in Sources */,
 				BDFE491028F303D2008F00A4 /* ContentView.swift in Sources */,
 				BDFE490E28F303D2008F00A4 /* EasyPCApp.swift in Sources */,
