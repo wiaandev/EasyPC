@@ -10,9 +10,10 @@ import SwiftUI
 struct Onboarding: View {
     
 
-    
     @State var onboard: [Onboard] = OnboardingData
     var body: some View {
+        NavigationView{
+            
         VStack{
             TabView{
                 ForEach(onboard) { onboard in
@@ -23,7 +24,8 @@ struct Onboarding: View {
             .tabViewStyle(.page)
         }
         } // end of body view
-        } // end of struct
+        }
+}
 
 struct OnboardingOne_Previews: PreviewProvider {
     static var previews: some View {

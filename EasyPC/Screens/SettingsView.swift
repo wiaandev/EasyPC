@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @AppStorage("isDarkMode") var isDarkMode = false
     @State private var showGreeting = false
     var body: some View {
         NavigationView{
@@ -61,7 +62,7 @@ struct SettingsView: View {
                         Spacer()
                     }
                     HStack{
-                        Toggle("Dark Mode" ,isOn: $showGreeting)
+                        Toggle("Dark Mode" ,isOn: $isDarkMode)
                             .toggleStyle(SwitchToggleStyle(tint: Color("Purple")))
                             .padding(.horizontal)
                             .foregroundColor(Color("Purple"))
@@ -93,6 +94,8 @@ struct SettingsView: View {
                             .padding(.bottom)
                         
                         HStack{
+                            Link(destination: URL(string: "https://www.github.com/wiaandev/EasyPC")!){
+                                
                             Image("github")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
@@ -101,8 +104,8 @@ struct SettingsView: View {
                             Text("wiaandev/EasyPC")
                                 .padding(.bottom)
                                 .foregroundColor(Color("Purple"))
+                            }
                         }
-                        
                         Text("EasyPC v1.0")
                             .foregroundColor(Color("Purple"))
                         

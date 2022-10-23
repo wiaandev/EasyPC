@@ -44,7 +44,7 @@ struct BuildStartView: View {
                         }
                         .padding()
                     InstructionCardView()
-                    NavigationLink(destination: ContentView()){
+                    NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)){
                         Button {
                             print("Clicked")
                         } label: {

@@ -27,8 +27,12 @@ struct SelectedView: View {
                         )
                     Spacer()
                 }
-                ForEach(budget) { i in
-                    BudgetCardView(budgetData: i)
+                NavigationLink(destination: BudgetSelect().navigationBarBackButtonHidden(true)){
+                    VStack(spacing: 200){
+                        ForEach(budget) { i in
+                            BudgetCardView(budgetData: i)
+                        }
+                    }
                 }
             }
             .padding(30)

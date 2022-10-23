@@ -12,9 +12,16 @@ struct SplashScreenView: View {
     @State private var size = 0.8
     @State private var opacity = 0.5
     
+    @AppStorage("onboardingComplete") var onboardingComplete = false
+    
     var body: some View {
         if isActive {
-            ContentView()
+//            onboardingComplete ? ContentView() : Onboarding()
+            if(onboardingComplete) {
+                ContentView()
+            } else {
+                Onboarding()
+            }
         } else {
             VStack {
                 HStack(spacing: 20){
@@ -42,6 +49,7 @@ struct SplashScreenView: View {
                 }
                 .scaleEffect(size)
                 .onAppear {
+                    onboardingComplete = true
                     withAnimation(.easeIn(duration: 1.2)){
                         self.size = 0.9
                         self.size = 1.00
