@@ -8,6 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var filteredBuild: [buildInfo] {
+        if(searchText.isEmpty) {
+            return buildInfoData
+        } else {
+            return buildInfoData.filter{ $0.name.contains(searchText) } // filtering data to see if data contains the search
+        }
+    }
+    
+//    var cardFilter: [buildsFilter] {
+//        if(searchText.isEmpty) {
+//            return buildTypes
+//        } else {
+//            return buildTypes.filter( $0.name.contains(searchText))
+//        }
+//    }
+    
     @State private var searchText = ""
     @State var navigationBarBackButton = true
     @State var buildFilter: [buildsFilter] = buildTypes
@@ -52,6 +69,8 @@ struct ContentView: View {
                             ForEach(buildFilter) { i in
 //                                Text(i.name)
                                 FilterCardView(filters: i)
+                            }.onTapGesture {
+                                self.buildFilter = filterByCode(name: "Gaming")
                             }
                         }
                         
@@ -80,9 +99,9 @@ struct ContentView: View {
                     Divider()
                         .padding(.horizontal)
                     
-                    NavigationLink(destination: SelectedView()){
+                    NavigationLink(destination: SelectedView().navigationBarBackButtonHidden(true)){
                         VStack{
-                            ForEach(buildInfo){ i in
+                            ForEach(searchText.isEmpty ? buildInfo : filteredBuild){ i in
                                 BuildCardView(builds: i )
                             }
                         }

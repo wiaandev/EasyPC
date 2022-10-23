@@ -12,7 +12,6 @@ struct Onboarding: View {
 
     @State var onboard: [Onboard] = OnboardingData
     var body: some View {
-        NavigationView{
             
         VStack{
             TabView{
@@ -20,10 +19,8 @@ struct Onboarding: View {
                     OnboardView(onboard: onboard)
                 }
             }
-            .ignoresSafeArea(.all)
             .tabViewStyle(.page)
         }
-        } // end of body view
         }
 }
 

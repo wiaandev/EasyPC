@@ -10,14 +10,19 @@ import SwiftUI
 @main
 struct EasyPCApp: App {
     
-    
+    @AppStorage("onboardingComplete") var onboardingComplete = false
     @AppStorage("isDarkMode") var isDarkMode = false
     
     var body: some Scene {
         WindowGroup {
-                
-            SplashScreenView()
-                .preferredColorScheme(isDarkMode ? .dark : .light)
+
+            if(onboardingComplete){
+                SplashScreenView()
+                    .preferredColorScheme(isDarkMode ? .dark : .light)
+            } else {
+                Onboarding()
+            }
+
         }
     }
 }

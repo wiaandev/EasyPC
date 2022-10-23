@@ -14,6 +14,8 @@ struct OnboardView: View {
     var onboard: Onboard
     
     var body: some View {
+        NavigationView{
+            
         ZStack{
             Rectangle()
                 .ignoresSafeArea(.all)
@@ -70,9 +72,20 @@ struct OnboardView: View {
                         .background(Color("Blue"))
                         .clipShape(Capsule())
                 }
-            } // end of parent VStack
+                NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)){
+                    Button{
+                        print("Hello")
+                    } label : {
+                        Text("Skip")
+                            .padding(.top, 30)
+                            .underline()
+                            .foregroundColor(Color("White"))
+                    }
+                } // end of parent VStack
+                }
             
-        } // end of parent ZStack
+        }
+        }// end of parent ZStack
     }
 }
 

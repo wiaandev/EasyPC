@@ -50,7 +50,7 @@ struct BudgetSelect: View {
 //                    PartView()
 //                    PartView()
 //                    PartView()
-                    NavigationLink(destination: BuildStartView()){
+                    NavigationLink(destination: BuildStartView().navigationBarBackButtonHidden(true)){
                         Button {
                             print("Clicked")
                         } label: {
