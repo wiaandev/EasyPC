@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FilterCardView: View {
     
-    var filters: buildsFilter
+    var filters: Part
     
     var body: some View {
         VStack{
@@ -18,7 +18,7 @@ struct FilterCardView: View {
             } label: {
                 VStack{
                     Image(systemName: filters.icon)
-                    Text(filters.name)
+                    Text(filters.partType)
                 }
                 
             }
@@ -35,6 +35,6 @@ struct FilterCardView: View {
 
 struct FilterCardView_Previews: PreviewProvider {
     static var previews: some View {
-        FilterCardView(filters: buildTypes[0])
+        FilterCardView(filters: PartData[0])
     }
 }

@@ -10,14 +10,14 @@ import SwiftUI
 struct Onboarding: View {
     
 
-    @State var onboard: [Onboard] = OnboardingData
+//    @State var onboard: [Onboard] = OnboardingData
     var body: some View {
             
         VStack{
             TabView{
-                ForEach(onboard) { onboard in
-                    OnboardView(onboard: onboard)
-                }
+//                ForEach(onboard) { onboard in
+//                    OnboardView(onboard: onboard)
+//                }
             }
             .tabViewStyle(.page)
         }

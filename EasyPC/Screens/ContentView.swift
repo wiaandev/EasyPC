@@ -9,26 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var filteredBuild: [buildInfo] {
-        if(searchText.isEmpty) {
-            return buildInfoData
-        } else {
-            return buildInfoData.filter{ $0.name.contains(searchText) } // filtering data to see if data contains the search
+        var filteredPart: [Part] {
+            if(searchText.isEmpty) {
+                return PartData
+            } else {
+                return PartData.filter{ $0.partType.contains(searchText) } // filtering data to see if data contains the search
+            }
         }
-    }
     
-//    var cardFilter: [buildsFilter] {
-//        if(searchText.isEmpty) {
-//            return buildTypes
-//        } else {
-//            return buildTypes.filter( $0.name.contains(searchText))
-//        }
-//    }
+    //    var cardFilter: [buildsFilter] {
+    //        if(searchText.isEmpty) {
+    //            return buildTypes
+    //        } else {
+    //            return buildTypes.filter( $0.name.contains(searchText))
+    //        }
+    //    }
     
     @State private var searchText = ""
     @State var navigationBarBackButton = true
-    @State var buildFilter: [buildsFilter] = buildTypes
-    @State var buildInfo: [buildInfo] = buildInfoData
+    @AppStorage("onboardingComplete") var onboardingComplete = false
+        @State var partFilter: [Part] = PartData
+    //    @State var buildInfo: [buildInfo] = buildInfoData
     var body: some View {
         NavigationView{
             VStack{
@@ -58,63 +59,65 @@ struct ContentView: View {
                             )
                     }
                     HStack{
+                        Button(action: {
+                            onboardingComplete = false
+                        }, label: {
+                            Text("Hello")
+                        })
                         Text("Quick Filter")
+                            .font(Font.custom("NunitoSans-Italic", size: 17))
                             .foregroundColor(Color("Purple"))
                             .padding(.horizontal)
-                            .font(.system(size: 16))
                         Spacer()
                     }
                     ScrollView(.horizontal){
                         HStack(spacing: 0){
-                            ForEach(buildFilter) { i in
-//                                Text(i.name)
+                            ForEach(partFilter) { i in
                                 FilterCardView(filters: i)
-                            }.onTapGesture {
-                                self.buildFilter = filterByCode(name: "Gaming")
                             }
                         }
+                            
+                        }
                         
-                    }
-                    
-                    HStack{
-                        Text("Our Builds")
+                        HStack{
+                            Text("Our Builds")
+                                .fontWeight(.bold)
+                                .padding(.horizontal)
+                                .font(.system(size: 40))
+                                .foregroundStyle(                    LinearGradient(
+                                    colors: [Color("Purple"), Color("Blue")],
+                                    startPoint: .top,
+                                    endPoint: .bottom
+                                )
+                                )
+                            Spacer()
+                        }
+                        HStack{
+                            Text("Choose a build type")
+                                .padding(.horizontal)
+                                .font(.system(size: 20))
+                                .foregroundColor(Color("Blue"))
+                            Spacer()
+                        }
+                        Divider()
                             .padding(.horizontal)
-                            .font(.system(size: 40))
-                            .fontWeight(.bold)
-                            .foregroundStyle(                    LinearGradient(
-                                colors: [Color("Purple"), Color("Blue")],
-                                startPoint: .top,
-                                endPoint: .bottom
-                            )
-                            )
-                        Spacer()
-                    }
-                    HStack{
-                        Text("Choose a build type")
-                            .padding(.horizontal)
-                            .font(.system(size: 20))
-                            .foregroundColor(Color("Blue"))
-                        Spacer()
-                    }
-                    Divider()
-                        .padding(.horizontal)
-                    
-                    NavigationLink(destination: SelectedView().navigationBarBackButtonHidden(true)){
-                        VStack{
-                            ForEach(searchText.isEmpty ? buildInfo : filteredBuild){ i in
-                                BuildCardView(builds: i )
+                        
+                        NavigationLink(destination: SelectedView().navigationBarBackButtonHidden(true)){
+                            VStack{
+//                                ForEach(searchText.isEmpty ? buildInfo : filteredBuild){ i in
+//                                    BuildCardView(builds: i )
+//                                }
                             }
                         }
                     }
                 }
             }
         }
+        
     }
-
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
-}

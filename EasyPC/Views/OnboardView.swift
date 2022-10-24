@@ -9,88 +9,62 @@ import SwiftUI
 
 struct OnboardView: View {
     
-    @AppStorage("onboardingComplete") var onboardingComplete = false
-    
-    var onboard: Onboard
+//    @AppStorage("onboardingComplete") var onboardingComplete = false
+    @State var offset: CGFloat = 0
     
     var body: some View {
-        NavigationView{
-            
-        ZStack{
-            Rectangle()
-                .ignoresSafeArea(.all)
-                .foregroundColor(Color("Purple"))
-            VStack(spacing: 0){
-                HStack{
-                    Text(onboard.title)
-                        .padding(.horizontal, 40)
-                        .foregroundColor(Color("White"))
-                        .fontWeight(.bold)
-                        .font(.system(size: 40))
-                    Spacer()
-                } // end of HStack
-                HStack{
-                    Text(onboard.subTitle)
-                        .padding([.horizontal, .bottom], 40)
-                        .foregroundColor(Color("White"))
-                        .font(.system(size: 20))
-                    Spacer()
-                } // end of Hstack
-                RoundedRectangle(cornerRadius: 25)
-                    .frame(width: 320, height: 300)
-                    .foregroundColor(Color("PurpleDark"))
-                    .overlay(
-                        VStack{
-                            RoundedRectangle(cornerRadius: 23)
-                                .frame(width: 220, height: 50)
-                                .foregroundColor(Color("PurpleLight"))
-                            ZStack{
-                                RoundedRectangle(cornerRadius: 23)
-                                    .frame(width: 220, height: 150)
-                                    .foregroundColor(Color("PurpleLight"))
-                                
-                                RoundedRectangle(cornerRadius: 23)
-                                    .frame(width: 75, height: 25)
-                                    .foregroundColor(Color("Blue"))
-                            } // end of ZStack
-
-                        }//end of VStack
-
-                    )
-                HStack{
-                    Text(onboard.description)
-                        .padding(20)
-                        .foregroundColor(Color("White"))
-                }//end of HStack
-                Button{
-                    onboardingComplete = true
-                } label: {
-                    Text(onboard.btnText)
-                        .foregroundColor(Color("White"))
-                        .padding(.horizontal, 50)
-                        .padding(.vertical, 10)
-                        .background(Color("Blue"))
-                        .clipShape(Capsule())
-                }
-                NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)){
-                    Button{
-                        print("Hello")
-                    } label : {
-                        Text("Skip")
-                            .padding(.top, 30)
-                            .underline()
-                            .foregroundColor(Color("White"))
+        Text("Hello World")
+        
+        //Custom Pager View
+        OffsetPageTabView(offset: $offset){
+            HStack(spacing: 0){
+                ForEach(boardingScreens){ screen in
+                    VStack(spacing: 15){
+                        Image(screen.image)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: getScreenBounds().width - 100, height: getScreenBounds().width - 100)
+                        
+                        VStack(alignment: .leading, spacing: 12){
+                            
+                            Text(screen.title)
+                                .font(.largeTitle.bold())
+                                .foregroundColor(.white)
+                            
+                            Text(screen.description)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.white)
+                            
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
-                } // end of parent VStack
+                    .padding()
+                    .frame(width: getScreenBounds().width)
+                    .frame(maxHeight: .infinity)
                 }
-            
+            }
         }
-        }// end of parent ZStack
+        .background(Color("screen\(Int(getIndex().rounded() + 1))"))
+        .ignoresSafeArea(.container, edges: .all)
+    }
+    
+    //Changing Background Color Based on Offset
+    func getIndex()->CGFloat{
+        let progress = offset / getScreenBounds().width
+        
+        return progress
     }
 }
 
 struct OnboardView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardView(onboard: OnboardingData[0])
+        OnboardView()
+    }
+}
+
+//Extending View to get Screen Bounds
+extension View{
+    func getScreenBounds()->CGRect{
+        return UIScreen.main.bounds
     }
 }

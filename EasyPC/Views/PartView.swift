@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PartView: View {
     
-    var partData: Parts
+//    var partData: Parts
     
     var body: some View {
         VStack{
@@ -20,7 +20,7 @@ struct PartView: View {
                     HStack{
                     VStack{
                     HStack{
-                        Text("\(partData.partType)")
+                        Text("test")
                             .foregroundColor(Color("White"))
                             .font(.system(size: 30))
                             .fontWeight(.bold)
@@ -28,12 +28,12 @@ struct PartView: View {
                         Spacer()
                     }.padding(.horizontal,30)
                         HStack{
-                            Text("\(partData.name)")
+                            Text("test")
                                 .foregroundColor(Color("White"))
                             Spacer()
                         }.padding(.horizontal, 30)
                     }
-                        Image("\(partData.image)")
+                        Image("test")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: .infinity, height: 150)
@@ -45,6 +45,6 @@ struct PartView: View {
 
 struct PartView_Previews: PreviewProvider {
     static var previews: some View {
-        PartView(partData: PartData[0])
+        PartView()
     }
 }

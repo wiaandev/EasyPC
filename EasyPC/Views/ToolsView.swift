@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ToolsView: View {
     
-    var tools : Budget
+//    var tools : Budget
     
     var body: some View {
         VStack{
@@ -23,16 +23,16 @@ struct ToolsView: View {
                             .fontWeight(.bold)
                             .foregroundColor(Color("White"))
                         Spacer()
-                        Text("\(tools.tools[0])")
+                        Text("Hi")
                             .foregroundColor(Color("White"))
-                        Text("\(tools.tools[1])")
+                        Text("hi")
                             .foregroundColor(Color("White"))
-                        Text("\(tools.tools[2])")
+                        Text("hi")
                             .foregroundColor(Color("White"))
                         
-                        Text("\(tools.tools[3])")
+                        Text("hi")
                             .foregroundColor(Color("White"))
-                        Text("\(tools.tools[4])")
+                        Text("hi")
                             .foregroundColor(Color("White"))
                     }
                     .padding()
@@ -43,6 +43,6 @@ struct ToolsView: View {
 
 struct ToolsView_Previews: PreviewProvider {
     static var previews: some View {
-        ToolsView(tools: BudgetData[0])
+        ToolsView()
     }
 }

@@ -9,8 +9,8 @@ import SwiftUI
 
 struct BudgetCardView: View {
     
-    var budgetData: Budget
-    @State var tools: [Budget] = BudgetData
+//    var budgetData: Budget
+//    @State var tools: [Budget] = BudgetData
     
     var body: some View {
         VStack{
@@ -21,15 +21,15 @@ struct BudgetCardView: View {
                     .overlay(
                         VStack{
                         HStack{
-                            Text("\(budgetData.title)")
-                                .foregroundColor(Color("White"))
-                                .font(.system(size: 20))
-                                .fontWeight(.bold)
+//                            Text("\(budgetData.title)")
+//                                .foregroundColor(Color("White"))
+//                                .font(.system(size: 20))
+//                                .fontWeight(.bold)
                             Spacer()
                         }.padding(.horizontal,30)
                             HStack{
-                                Text("\(budgetData.desc)")
-                                    .foregroundColor(Color("White"))
+//                                Text("\(budgetData.desc)")
+//                                    .foregroundColor(Color("White"))
                                 Spacer()
                             }.padding(.horizontal, 30)
                         }
@@ -43,9 +43,7 @@ struct BudgetCardView: View {
                                 .foregroundColor(Color("White"))
                                 .fontWeight(.bold)
                                 .padding(.leading)
-                            ForEach(tools, id: \.self.id) { i in
-                                ToolPillView(tools: i)
-                            }
+//                            ToolPillView(tools: budgetData)
                         }.padding([.top, .bottom])
                     )
                     .offset(y: 190)
@@ -57,6 +55,6 @@ struct BudgetCardView: View {
 
 struct BudgetCardView_Previews: PreviewProvider {
     static var previews: some View {
-        BudgetCardView(budgetData: BudgetData[0])
+        BudgetCardView()
     }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BudgetSelect: View {
     
-    @State var partData : [Parts] = PartData
+//    @State var partData : [Parts] = PartData
     
     var body: some View {
         NavigationView{
@@ -44,9 +44,9 @@ struct BudgetSelect: View {
                             .font(.system(size: 22))
                         Spacer()
                     }
-                    ForEach(partData) { datum in
-                        PartView(partData: datum)
-                    }
+//                    ForEach(partData) { datum in
+//                        PartView(partData: datum)
+//                    }
 //                    PartView()
 //                    PartView()
 //                    PartView()
