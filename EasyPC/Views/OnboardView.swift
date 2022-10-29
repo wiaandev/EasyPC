@@ -13,39 +13,80 @@ struct OnboardView: View {
     @State var offset: CGFloat = 0
     
     var body: some View {
-        Text("Hello World")
-        
         //Custom Pager View
-        OffsetPageTabView(offset: $offset){
-            HStack(spacing: 0){
-                ForEach(boardingScreens){ screen in
-                    VStack(spacing: 15){
-                        Image(screen.image)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: getScreenBounds().width - 100, height: getScreenBounds().width - 100)
-                        
-                        VStack(alignment: .leading, spacing: 12){
+        NavigationView{
+            OffsetPageTabView(offset: $offset){
+                HStack(spacing: 0){
+                    ForEach(boardingScreens){ screen in
+                        VStack(spacing: 15){
+                            Image(screen.image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: getScreenBounds().width - 100, height: getScreenBounds().width - 100)
                             
-                            Text(screen.title)
-                                .font(.largeTitle.bold())
-                                .foregroundColor(.white)
-                            
-                            Text(screen.description)
-                                .fontWeight(.semibold)
-                                .foregroundColor(.white)
-                            
+                            VStack(alignment: .leading, spacing: 12){
+                                
+                                Text(screen.title)
+                                    .font(.largeTitle.bold())
+                                    .foregroundColor(.white)
+                                
+                                Text(screen.description)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.white)
+                                
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
                         }
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding()
+                        .frame(width: getScreenBounds().width)
+                        .frame(maxHeight: .infinity)
+                        .background(Color("Purple"))
                     }
-                    .padding()
-                    .frame(width: getScreenBounds().width)
-                    .frame(maxHeight: .infinity)
                 }
             }
+            .ignoresSafeArea(.container, edges: .all)
+            .overlay(
+                
+                VStack{
+                    Button {
+                            offset = min(offset + getScreenBounds().width,getScreenBounds().width * 3)
+                    } label: {
+                        Text("Next")
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .padding(.vertical, 20)
+                            .frame(maxWidth: .infinity)
+                            .background(Color("Blue"), in: RoundedRectangle(cornerRadius: 12))
+                    }
+                        HStack(spacing: 8){
+                            ForEach(boardingScreens.indices,id: \.self){index in
+                                Circle()
+                                    .fill(.white)
+                                    .opacity(index == (Int(getIndex())) ? 1 : 0.4)
+                                    .frame(width: 8, height: 8)
+                                    .scaleEffect(index == (Int(getIndex())) ? 1.3 : 0.85)
+                                    .animation(.easeInOut, value: getIndex())
+                            }
+                        }
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                    NavigationLink(destination: ContentView()){
+                        Button {
+                            
+                        } label: {
+                            Text("Skip")
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                        }
+                    }
+
+                }
+                .padding()
+                
+                ,alignment: .bottom
+            )
         }
-        .background(Color("screen\(Int(getIndex().rounded() + 1))"))
-        .ignoresSafeArea(.container, edges: .all)
+
     }
     
     //Changing Background Color Based on Offset

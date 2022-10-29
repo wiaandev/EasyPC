@@ -12,15 +12,12 @@ struct Onboarding: View {
 
 //    @State var onboard: [Onboard] = OnboardingData
     var body: some View {
-            
-        VStack{
-            TabView{
-//                ForEach(onboard) { onboard in
-//                    OnboardView(onboard: onboard)
-//                }
+        NavigationView{
+            VStack{
+                OnboardView()
             }
-            .tabViewStyle(.page)
         }
+
         }
 }
 

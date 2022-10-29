@@ -15,7 +15,6 @@
 		BD3DE0442906EA8B00E5A569 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = BD3DE0392906EA8B00E5A569 /* OFL.txt */; };
 		BD3DE055290754DB00E5A569 /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3DE054290754DB00E5A569 /* OffsetPageTabView.swift */; };
 		BD452CC229045B3C00830F7B /* ToolPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD452CC129045B3C00830F7B /* ToolPillView.swift */; };
-		BD83648528F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD83648428F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg */; };
 		BDB177C428F34C0E00EB33DD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB177C328F34C0D00EB33DD /* SettingsView.swift */; };
 		BDC1FC9B28FDF9970098B44E /* BudgetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC1FC9A28FDF9970098B44E /* BudgetCardView.swift */; };
 		BDC1FC9D28FE03D10098B44E /* PartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC1FC9C28FE03D10098B44E /* PartView.swift */; };
@@ -47,7 +46,6 @@
 		BD3DE05329073A5400E5A569 /* NunitoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Italic.ttf"; sourceTree = "<group>"; };
 		BD3DE054290754DB00E5A569 /* OffsetPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
 		BD452CC129045B3C00830F7B /* ToolPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolPillView.swift; sourceTree = "<group>"; };
-		BD83648428F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot_20210510_090107_com.whatsapp_2.jpg; sourceTree = "<group>"; };
 		BDB177C328F34C0D00EB33DD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BDC1FC9A28FDF9970098B44E /* BudgetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCardView.swift; sourceTree = "<group>"; };
 		BDC1FC9C28FE03D10098B44E /* PartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartView.swift; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 				BDB177C128F34AF700EB33DD /* Models */,
 				BDFE490D28F303D2008F00A4 /* EasyPCApp.swift */,
 				BDFE491128F303D3008F00A4 /* Assets.xcassets */,
-				BD83648428F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg */,
 				BDFE491328F303D3008F00A4 /* EasyPC.entitlements */,
 				BDFE491428F303D3008F00A4 /* Preview Content */,
 			);
@@ -239,7 +236,6 @@
 			files = (
 				BD3DE0442906EA8B00E5A569 /* OFL.txt in Resources */,
 				BDFE491628F303D3008F00A4 /* Preview Assets.xcassets in Resources */,
-				BD83648528F58336002A1E57 /* Screenshot_20210510_090107_com.whatsapp_2.jpg in Resources */,
 				BDFE491228F303D3008F00A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
