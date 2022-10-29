@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct BuildCardView: View {
-//    var builds: buildInfo
+    var parts: Part
     
     var body: some View {
-
         VStack{
             ZStack{
-                Image("Insert Image")
+                Image(parts.image)
                     .resizable()
                     .scaledToFill()
                     .frame(maxWidth: .infinity, maxHeight: 250)
@@ -30,14 +29,14 @@ struct BuildCardView: View {
                     )
                 
                 VStack(spacing: 10){
-                    Text("Sample")
+                    Text(parts.partType)
                         .foregroundColor(.white)
                         .font(.title)
                         .fontWeight(.bold)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.horizontal)
                     
-                    Text("Sample")
+                    Text(parts.desc)
                         .multilineTextAlignment(.leading)
                         .foregroundColor(.white)
 //                        .padding(.leading, 20)
@@ -65,6 +64,6 @@ struct BuildCardView: View {
 
 struct BuildCardView_Previews: PreviewProvider {
     static var previews: some View {
-        BuildCardView()
+        BuildCardView(parts: PartData[0])
     }
 }

@@ -9,26 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     
-        var filteredPart: [Part] {
-            if(searchText.isEmpty) {
-                return PartData
-            } else {
-                return PartData.filter{ $0.partType.contains(searchText) } // filtering data to see if data contains the search
-            }
+    var filteredPart: [Part] {
+        if(searchText.isEmpty) {
+            return PartData
+        } else {
+            return PartData.filter{ $0.partType.contains(searchText) } // filtering data to see if data contains the search
         }
-    
-    //    var cardFilter: [buildsFilter] {
-    //        if(searchText.isEmpty) {
-    //            return buildTypes
-    //        } else {
-    //            return buildTypes.filter( $0.name.contains(searchText))
-    //        }
-    //    }
+    }
     
     @State private var searchText = ""
     @State var navigationBarBackButton = true
     @AppStorage("onboardingComplete") var onboardingComplete = false
-        @State var partFilter: [Part] = PartData
+    @State var partFilter: [Part] = PartData
     //    @State var buildInfo: [buildInfo] = buildInfoData
     var body: some View {
         NavigationView{
@@ -76,37 +68,35 @@ struct ContentView: View {
                                 FilterCardView(filters: i)
                             }
                         }
-                            
-                        }
                         
-                        HStack{
-                            Text("Our Builds")
-                                .fontWeight(.bold)
-                                .padding(.horizontal)
-                                .font(.system(size: 40))
-                                .foregroundStyle(                    LinearGradient(
-                                    colors: [Color("Purple"), Color("Blue")],
-                                    startPoint: .top,
-                                    endPoint: .bottom
-                                )
-                                )
-                            Spacer()
-                        }
-                        HStack{
-                            Text("Choose a build type")
-                                .padding(.horizontal)
-                                .font(.system(size: 20))
-                                .foregroundColor(Color("Blue"))
-                            Spacer()
-                        }
-                        Divider()
+                    }
+                    
+                    HStack{
+                        Text("Our Builds")
+                            .fontWeight(.bold)
                             .padding(.horizontal)
-                        
-                        NavigationLink(destination: SelectedView().navigationBarBackButtonHidden(true)){
-                            VStack{
-//                                ForEach(searchText.isEmpty ? buildInfo : filteredBuild){ i in
-//                                    BuildCardView(builds: i )
-//                                }
+                            .font(.system(size: 40))
+                            .foregroundStyle(                    LinearGradient(
+                                colors: [Color("Purple"), Color("Blue")],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                            )
+                        Spacer()
+                    }
+                    HStack{
+                        Text("Choose a build type")
+                            .padding(.horizontal)
+                            .font(.system(size: 20))
+                            .foregroundColor(Color("Blue"))
+                        Spacer()
+                    }
+                    Divider()
+                        .padding(.horizontal)
+                    VStack{
+                        ForEach(filteredPart){ i in
+                            NavigationLink(destination: SelectedView(parts: i).navigationBarBackButtonHidden(true)){
+                                BuildCardView(parts: i)
                             }
                         }
                     }
@@ -121,3 +111,4 @@ struct ContentView: View {
             ContentView()
         }
     }
+}

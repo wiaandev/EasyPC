@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Part: Identifiable {
+struct Part: Identifiable, Hashable {
     var id = UUID()
     var icon: String
     var partType: String

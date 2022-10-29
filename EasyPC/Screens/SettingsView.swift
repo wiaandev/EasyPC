@@ -66,6 +66,7 @@ struct SettingsView: View {
                             .toggleStyle(SwitchToggleStyle(tint: Color("Purple")))
                             .padding(.horizontal)
                             .foregroundColor(Color("Purple"))
+                            .animation(.easeInOut, value: 0.3)
                         Spacer()
                     }
                     Divider()

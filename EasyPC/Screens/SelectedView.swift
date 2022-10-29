@@ -9,14 +9,26 @@ import SwiftUI
 
 struct SelectedView: View {
     
-    //    @State var budget: [Budget] = BudgetData
+    var parts: Part
     
     var body: some View {
         NavigationView{
             ScrollView(.vertical){
                 VStack{
                     HStack{
-                        Text("Gaming")
+                        NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)){
+                            
+                            Image(systemName: "chevron.left")
+                                .padding()
+                                .foregroundColor(Color("Purple"))
+                            Text("Go Back")
+                                .foregroundColor(Color("Purple"))
+                            
+                        }
+                        Spacer()
+                    }
+                    HStack{
+                        Text("\(parts.partType)")
                             .font(.system(size: 45))
                             .fontWeight(.bold)
                             .foregroundStyle(                    LinearGradient(
@@ -25,25 +37,29 @@ struct SelectedView: View {
                                 endPoint: .bottom
                             )
                             )
+                            .padding()
                         Spacer()
                     }
-                    NavigationLink(destination: BudgetSelect().navigationBarBackButtonHidden(true)){
-                        VStack(spacing: 200){
-                            //                        ForEach(budget) { i in
-                            //                            BudgetCardView(budgetData: i)
-                            //                        }
-                            //                    }
+                    HStack{
+                        Text("something cool")
+                        NavigationLink(destination: BudgetSelect().navigationBarBackButtonHidden(true)){
+                            VStack(spacing: 200){
+                                ForEach(parts.tools, id: \.self){i in
+                                    Text(i)
+                                }
+                            }
                         }
+                        .padding(30)
                     }
-                    .padding(30)
                 }
             }
         }
     }
     
+}
+        
     struct SelectedView_Previews: PreviewProvider {
         static var previews: some View {
-            SelectedView()
+            SelectedView(parts: PartData[0])
         }
     }
-}
