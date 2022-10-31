@@ -20,6 +20,7 @@ struct EasyPCApp: App {
                     .preferredColorScheme(isDarkMode ? .dark : .light)
             } else {
                 SplashScreenView()
+                    .preferredColorScheme(isDarkMode ? .dark : .light)
             }
 
         }
