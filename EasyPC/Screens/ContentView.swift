@@ -21,7 +21,6 @@ struct ContentView: View {
     @State var navigationBarBackButton = true
     @AppStorage("onboardingComplete") var onboardingComplete = false
     @State var partFilter: [Part] = PartData
-    //    @State var buildInfo: [buildInfo] = buildInfoData
     var body: some View {
         NavigationView{
             VStack{
@@ -51,11 +50,6 @@ struct ContentView: View {
                             )
                     }
                     HStack{
-                        Button(action: {
-                            onboardingComplete = false
-                        }, label: {
-                            Text("Reset")
-                        })
                         Text("Quick Filter")
                             .font(Font.custom("NunitoSans-Italic", size: 17))
                             .foregroundColor(Color("Purple"))

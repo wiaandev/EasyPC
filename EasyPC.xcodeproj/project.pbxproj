@@ -9,14 +9,11 @@
 /* Begin PBXBuildFile section */
 		BD0C145428F37139002A5A55 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145328F37139002A5A55 /* SplashScreenView.swift */; };
 		BD0C145A28F37C2C002A5A55 /* SelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145928F37C2C002A5A55 /* SelectedView.swift */; };
-		BD0C145E28F37C6A002A5A55 /* BuildStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0C145D28F37C6A002A5A55 /* BuildStartView.swift */; };
 		BD15EC6C2906D5E100EE1EE4 /* PartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD15EC6B2906D5E100EE1EE4 /* PartData.swift */; };
 		BD3DE055290754DB00E5A569 /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3DE054290754DB00E5A569 /* OffsetPageTabView.swift */; };
 		BD452CC229045B3C00830F7B /* ToolPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD452CC129045B3C00830F7B /* ToolPillView.swift */; };
 		BDA32CF2290EE39E00F4756B /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA32CF1290EE39E00F4756B /* StopwatchView.swift */; };
-		BDA32CF4290EF7D400F4756B /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA32CF3290EF7D400F4756B /* InstructionView.swift */; };
 		BDB177C428F34C0E00EB33DD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB177C328F34C0D00EB33DD /* SettingsView.swift */; };
-		BDC1FC9D28FE03D10098B44E /* PartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC1FC9C28FE03D10098B44E /* PartView.swift */; };
 		BDD1A28628FB04E8002712A5 /* BuildCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A28528FB04E8002712A5 /* BuildCardView.swift */; };
 		BDD1A28828FB316B002712A5 /* FilterCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A28728FB316B002712A5 /* FilterCardView.swift */; };
 		BDD1A28A28FB3588002712A5 /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD1A28928FB3588002712A5 /* OnboardView.swift */; };
@@ -32,15 +29,12 @@
 /* Begin PBXFileReference section */
 		BD0C145328F37139002A5A55 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		BD0C145928F37C2C002A5A55 /* SelectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedView.swift; sourceTree = "<group>"; };
-		BD0C145D28F37C6A002A5A55 /* BuildStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildStartView.swift; sourceTree = "<group>"; };
 		BD15EC6B2906D5E100EE1EE4 /* PartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartData.swift; sourceTree = "<group>"; };
 		BD3DE04E2906EB0100E5A569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BD3DE054290754DB00E5A569 /* OffsetPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
 		BD452CC129045B3C00830F7B /* ToolPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolPillView.swift; sourceTree = "<group>"; };
 		BDA32CF1290EE39E00F4756B /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
-		BDA32CF3290EF7D400F4756B /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
 		BDB177C328F34C0D00EB33DD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		BDC1FC9C28FE03D10098B44E /* PartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartView.swift; sourceTree = "<group>"; };
 		BDD1A28528FB04E8002712A5 /* BuildCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildCardView.swift; sourceTree = "<group>"; };
 		BDD1A28728FB316B002712A5 /* FilterCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCardView.swift; sourceTree = "<group>"; };
 		BDD1A28928FB3588002712A5 /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
@@ -90,9 +84,7 @@
 				BDB177C328F34C0D00EB33DD /* SettingsView.swift */,
 				BD0C145328F37139002A5A55 /* SplashScreenView.swift */,
 				BD0C145928F37C2C002A5A55 /* SelectedView.swift */,
-				BD0C145D28F37C6A002A5A55 /* BuildStartView.swift */,
 				BDDA686728F5C9CF0036BE1F /* Onboarding.swift */,
-				BDA32CF3290EF7D400F4756B /* InstructionView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -103,7 +95,6 @@
 				BDD1A28528FB04E8002712A5 /* BuildCardView.swift */,
 				BDD1A28728FB316B002712A5 /* FilterCardView.swift */,
 				BDD1A28928FB3588002712A5 /* OnboardView.swift */,
-				BDC1FC9C28FE03D10098B44E /* PartView.swift */,
 				BD452CC129045B3C00830F7B /* ToolPillView.swift */,
 				BD3DE054290754DB00E5A569 /* OffsetPageTabView.swift */,
 				BDA32CF1290EE39E00F4756B /* StopwatchView.swift */,
@@ -221,16 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD0C145E28F37C6A002A5A55 /* BuildStartView.swift in Sources */,
 				BDD1A28A28FB3588002712A5 /* OnboardView.swift in Sources */,
 				BDB177C428F34C0E00EB33DD /* SettingsView.swift in Sources */,
 				BD3DE055290754DB00E5A569 /* OffsetPageTabView.swift in Sources */,
-				BDC1FC9D28FE03D10098B44E /* PartView.swift in Sources */,
 				BDE25806290342A500CD408E /* Part.swift in Sources */,
 				BD452CC229045B3C00830F7B /* ToolPillView.swift in Sources */,
 				BD0C145428F37139002A5A55 /* SplashScreenView.swift in Sources */,
 				BDFE491028F303D2008F00A4 /* ContentView.swift in Sources */,
-				BDA32CF4290EF7D400F4756B /* InstructionView.swift in Sources */,
 				BDFE490E28F303D2008F00A4 /* EasyPCApp.swift in Sources */,
 				BD0C145A28F37C2C002A5A55 /* SelectedView.swift in Sources */,
 				BDDA686828F5C9CF0036BE1F /* Onboarding.swift in Sources */,

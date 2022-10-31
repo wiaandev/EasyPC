@@ -14,7 +14,6 @@ struct InstructionView: View {
             
         ForEach(parts.instructions, id: \.self){i in
             Text(i)
-//            InstructionCardView(parts: i)
         }
         }
     }
