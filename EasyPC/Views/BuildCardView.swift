@@ -28,7 +28,7 @@ struct BuildCardView: View {
                             ).opacity(0.7)
                     )
                 
-                VStack(spacing: 10){
+                VStack(alignment: .leading, spacing: 10){
                     Text(parts.partType)
                         .foregroundColor(.white)
                         .font(.title)
@@ -39,8 +39,6 @@ struct BuildCardView: View {
                     Text(parts.desc)
                         .multilineTextAlignment(.leading)
                         .foregroundColor(.white)
-//                        .padding(.leading, 20)
-//                        .padding(.trailing, 20)
 
     
                     HStack{
