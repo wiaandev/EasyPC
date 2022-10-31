@@ -39,7 +39,7 @@ struct SplashScreenView: View {
                         .frame(width: 143, height: 40)
                         .mask(
                             Text("EasyPC")
-                                .font(Font.custom("Outfit-Bold", size: 35))
+                                .fontWeight(.bold)
                                 .font(.system(size: 40))
                         )
                         Text("PC Building Made Simple")
