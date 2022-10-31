@@ -11,7 +11,7 @@ struct OnboardView: View {
     
 //    @AppStorage("onboardingComplete") var onboardingComplete = false
     @State var offset: CGFloat = 0
-    
+    @AppStorage("onboardingComplete") var onboardingComplete = false
     var body: some View {
         //Custom Pager View
         NavigationView{
@@ -45,6 +45,7 @@ struct OnboardView: View {
                 }
             }
             .ignoresSafeArea(.container, edges: .all)
+            .frame(width: .infinity, height: .infinity)
             .overlay(
                 
                 VStack{
@@ -70,14 +71,15 @@ struct OnboardView: View {
                         }
                         .padding()
                         .frame(maxWidth: .infinity)
-                    NavigationLink(destination: ContentView()){
+                    NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)){
                         Button {
-                            
+                            onboardingComplete = true
                         } label: {
-                            Text("Skip")
+                            Text("Get Started")
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
                         }
+                        .padding()
                     }
 
                 }

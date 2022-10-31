@@ -16,10 +16,10 @@ struct EasyPCApp: App {
     var body: some Scene {
         WindowGroup {
             if(onboardingComplete){
-                SplashScreenView()
+                ContentView()
                     .preferredColorScheme(isDarkMode ? .dark : .light)
             } else {
-                Onboarding()
+                SplashScreenView()
             }
 
         }

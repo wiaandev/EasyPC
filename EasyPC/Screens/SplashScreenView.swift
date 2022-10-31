@@ -49,7 +49,7 @@ struct SplashScreenView: View {
                 }
                 .scaleEffect(size)
                 .onAppear {
-                    onboardingComplete = true
+                    onboardingComplete = false
                     withAnimation(.easeIn(duration: 1.2)){
                         self.size = 0.9
                         self.size = 1.00

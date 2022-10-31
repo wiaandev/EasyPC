@@ -13,7 +13,7 @@ struct ContentView: View {
         if(searchText.isEmpty) {
             return PartData
         } else {
-            return PartData.filter{ $0.partType.contains(searchText) } // filtering data to see if data contains the search
+            return PartData.filter{ $0.key.contains(searchText) } // filtering data to see if data contains the search
         }
     }
     
@@ -54,7 +54,7 @@ struct ContentView: View {
                         Button(action: {
                             onboardingComplete = false
                         }, label: {
-                            Text("Hello")
+                            Text("Reset")
                         })
                         Text("Quick Filter")
                             .font(Font.custom("NunitoSans-Italic", size: 17))
@@ -66,6 +66,9 @@ struct ContentView: View {
                         HStack(spacing: 0){
                             ForEach(partFilter) { i in
                                 FilterCardView(filters: i)
+                                    .onTapGesture {
+                                        self.partFilter = filterByKey(key: "cpu")
+                                    }
                             }
                         }
                         
@@ -94,7 +97,7 @@ struct ContentView: View {
                     Divider()
                         .padding(.horizontal)
                     VStack{
-                        ForEach(filteredPart){ i in
+                        ForEach(searchText.isEmpty ? partFilter : filteredPart){ i in
                             NavigationLink(destination: SelectedView(parts: i).navigationBarBackButtonHidden(true)){
                                 BuildCardView(parts: i)
                             }

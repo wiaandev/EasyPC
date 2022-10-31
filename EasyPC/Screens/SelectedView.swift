@@ -81,12 +81,15 @@ struct SelectedView: View {
                                             .foregroundColor(Color("White"))
                                     }
                                 }
+                                    .frame(height: .infinity)
+                                    .fixedSize(horizontal: false, vertical: true)
                                     .padding()
                             )
+                            .frame(height: 700)
                             .aspectRatio(contentMode: .fit)
                             .padding()
-                       Spacer()
                     }
+                    NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)){
                         Button{
                             
                         } label: {
@@ -98,6 +101,7 @@ struct SelectedView: View {
                                 .background(Color("Blue"), in: RoundedRectangle(cornerRadius: 12))
                         }
                         .padding()
+                    }
                     }
                 }
             }

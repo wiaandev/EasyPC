@@ -31,12 +31,13 @@ struct BuildCardView: View {
                 VStack(alignment: .leading, spacing: 10){
                     Text(parts.partType)
                         .foregroundColor(.white)
-                        .font(.title)
+                        .font(.largeTitle)
                         .fontWeight(.bold)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.horizontal)
                     
                     Text(parts.desc)
+                        .padding(20)
                         .multilineTextAlignment(.leading)
                         .foregroundColor(.white)
 

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FilterCardView: View {
     
-    var filters: Part
+    @State var filters: Part
     
     var body: some View {
         VStack{
@@ -18,7 +18,7 @@ struct FilterCardView: View {
             } label: {
                 VStack{
                     Image(systemName: filters.icon)
-                    Text(filters.partType)
+                    Text(filters.key)
                 }
                 
             }
