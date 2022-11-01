@@ -13,7 +13,7 @@ struct ContentView: View {
         if(searchText.isEmpty) {
             return PartData
         } else {
-            return PartData.filter{ $0.key.contains(searchText) } // filtering data to see if data contains the search
+            return PartData.filter{ $0.partType.contains(searchText) } // filtering data to see if data contains the search
         }
     }
     
@@ -54,6 +54,11 @@ struct ContentView: View {
                             .font(Font.custom("NunitoSans-Italic", size: 17))
                             .foregroundColor(Color("Purple"))
                             .padding(.horizontal)
+                        Button{
+                            onboardingComplete = false
+                        } label:{
+                            Text("Reset")
+                        }
                         Spacer()
                     }
                     ScrollView(.horizontal){
@@ -91,7 +96,7 @@ struct ContentView: View {
                     Divider()
                         .padding(.horizontal)
                     VStack{
-                        ForEach(searchText.isEmpty ? partFilter : filteredPart){ i in
+                        ForEach(filteredPart){ i in
                             NavigationLink(destination: SelectedView(parts: i).navigationBarBackButtonHidden(true)){
                                 BuildCardView(parts: i)
                             }
