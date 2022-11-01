@@ -25,11 +25,11 @@
 
    <br />
    <br />
-   <a href="https://youtu.be/8iZ_rSmcN0E">View Demo</a>
+   <a href="https://youtu.be/M6FZHHjd9bg">View Demo</a>
     ·
-    <a href="https://github.com/wiaandev/WorkWare/issues">Report Bug</a>
+    <a href="https://github.com/wiaandev/EasyPC/issues">Report Bug</a>
     ·
-    <a href="https://github.com/wiaandev/WorkWare/issues">Request Feature</a>
+    <a href="https://github.com/wiaandev/EasyPC/issues">Request Feature</a>
 </p>
 <!-- TABLE OF CONTENTS -->
 
@@ -68,13 +68,11 @@
 
 ### Project Description
 
-This is WorkWare! A guitar e-commerce store where the user can interact with it via adding guitars to the cart and then checking out, in which they will push an order to the database that can be retrieved by the admin and then can later be dispatched. The only brand sold on this site is Gibson. NOTE: THIS IS A MOCK E-COMMERCE WEBSITE.
+Welcome to EasyPC. This is an app that guides users on building their very own computer. Whether it be for personal use or something that you want to use for work, EasyPC can help and show you that it is not as scary and daunting as it looks.
 
 ### Built With
-[<img src="https://www.svgrepo.com/show/331488/mongodb.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=gs_emea_south_africa_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624560&adgroup=115749711783)
-[<img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://expressjs.com/)
-[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" width="6%" height="6%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://reactjs.org/)
-[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png?20170401104355" width="7%" height="7%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://nodejs.org/en/)
+[<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://developer.apple.com/swift/)
+[<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://developer.apple.com/xcode/)
 
 
 
@@ -89,7 +87,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-For development, the latest version of Android Studio is required. The latest version can be downloaded from [Android Studio](https://developer.android.com/studio?gclid=CjwKCAjwuYWSBhByEiwAKd_n_q4WXi5vcCji08peoWOEsv-KHFT7QWNZNmozB_CIiiSNl_HOUL-1JBoCGx8QAvD_BwE&gclsrc=aw.ds)
+For development, the latest version of Xcode is required. The latest version can be downloaded from [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 
 ### Installation
 
@@ -118,39 +116,24 @@ Here are a couple of ways to clone this repo:
 
 <!-- note how you can use your gitHub link. Just make a path to your assets folder -->
 
-### For the User
 
-#### Logging In
+### Viewing Individual Parts
 
-![image2][image2]
-The user can log into their profile using their email and passwords.
+![image2][https://drive.google.com/uc?export=view&id=XXX]
+The user can view each instruction and required tool for every listed computer part on the landing screen, by clicking on one of the cards.
 
-#### Viewing Products Individually
+### Filter Parts
 
-![image3][image3]
-The user can view the product they are looking for individually and they can look for more in-depth information about it, like the neck length, the handedness and much more!
+![image3][https://drive.google.com/uc?export=view&id=XXX]
+The user can filter through a wide variety of parts via the search bar at the very top of the landing page.
 
-#### Adding products to a cart
+### Change Appearance
 
-![image4][image4]
-After the user has decided what guitar they want to order, they can add it to the cart (Note: this can only be done if the user is logged in!).
+![image4][https://drive.google.com/uc?export=view&id=XXX]
+The user can decide what appearance they want to run on the EasyPC app by simply toggling between light and dark mode in the settings page.
 
-#### Placing orders via checkout
-If the user wants to place an order for their guitar, they can do so by proceeding to the checkout page and typing in their card details (this is a mock payment card section)
-
-### For the Admin
-#### Adding Guitars To The Store
-![image6][image5]
-The admin has access the to the inventory management page, which means he can add guitars to the store by clicking on "New Guitar+", wherein a modal will popup and the admin can enter all the necessary information to add a guitar to WorkWare.
-
-#### Updating Guitar Information
-![image7][image6] If the user feels like there is some information on a guitar that is not accurate or that needs updating, the  admin can do so by clicking on the update button, where again, a modal will pop-up and the admin can update a guitar's information accordingly.
-
-#### Deleting Guitars From the Database
-![image7][image7]Sometimes you feel that you just want to delete a guitar that may be not of interest to some people. The admin can delete a guitar from the store by simply clicking on delete, and then confirming yes by clicking on the modal that will appear next.
-
-#### Dispatching Orders
-![image14][image14]From the order processing page, the admin can view any incoming orders and their information, by clicking on the dispatch button, the user will remove the order from the database and so delivery will take place.
+### Timer
+The user can time themselves. When reading through the instructions, above it will be a stopwatch, where they can see how fast they can install a certain component.
 
 <!-- CONCEPT PROCESS -->
 <!-- Briefly eWorkWarelain your concept ideation process -->
@@ -158,14 +141,14 @@ The admin has access the to the inventory management page, which means he can ad
 
 ## Concept Process
 
-The color blue just gives a website just that sleek premium feel combined with a color like white, I wanted to use a sans-seriff typeface for this project, cause I just feel like something like cursive or Serif typefaces just won't cut it.
+Playing around with the colors, I really did enjoy the blue and purple color and I really felt like they compliment each other really well. Going with a Sans-Serif font is always my way to go and I think it gave a good vibe to the application as well.
 
 ### Wireframes
 
-![image8](client/src/Assets/mockups/wireframes.jpg)
+![image8](https://drive.google.com/uc?export=view&id=XXX)
 
 ### Moodboard
-![image9][image9]
+![image9][https://drive.google.com/uc?export=view&id=XXX]
 
 ## Development Process
 
@@ -223,9 +206,9 @@ The `Development Process` is the technical implementations and functionality don
 
 <!-- TODO Change this -->
 
-![image2][image2]
-![image3][image3]
-![image4][image4]
+![image2][https://drive.google.com/uc?export=view&id=XXX]
+![image3][https://drive.google.com/uc?export=view&id=XXX]
+![image4][https://drive.google.com/uc?export=view&id=XXX]
 <br>
 
 
@@ -237,9 +220,9 @@ The `Development Process` is the technical implementations and functionality don
 
 To see a run through of WorkWare, click below:
 
-[View Demonstration](https://youtu.be/8iZ_rSmcN0E)
+[View Demonstration](https://youtu.be/M6FZHHjd9bg)
 
-See the [open issues](https://github.com/wiaandev/WorkWare/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/wiaandev/EasyPC/issues) for a list of proposed features (and known issues).
 
 <!-- AUTHORS -->
 
@@ -269,10 +252,11 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 
 - [Stack Overflow](https://stackoverflow.com/)
 - [Figma](https://www.figma.com/)
-- [Lecturer](https://github.com/MikeMaynard14)
+- [Lecturer](https://github.com/ArmandPret)
 - [Freepik](https://www.freepik.com)
-- [unDraw](https://undraw.co/)
-- [Gibson](http://gibson.com/)
+- [How to build a stopwatch](https://medium.com/geekculture/build-a-stopwatch-in-just-3-steps-using-swiftui-778c327d214b)
+- [Splash Screen](https://www.youtube.com/watch?v=0ytO3wCRKZU)
+- [Onboarding](https://www.youtube.com/watch?v=rCgbJf5SWQE)
 - [Leander van Aarde](https://github.com/leandervanAarde)
 - [Vian Du Plessis](https://github.com/Vian-du-Plessis)
 - [Reinhardt de Beer](https://github.com/EpicBlue1)
